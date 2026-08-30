@@ -1,0 +1,1740 @@
+{
+  "video_path": "my_test.mp4",
+  "segments": [
+    {
+      "id": "seg-0000",
+      "order": 0,
+      "included": false,
+      "start": 0.69,
+      "end": 11.67,
+      "text": "Okay, so, um, hi. This is a test recording. I'm just gonna talk for a few minutes about",
+      "words": [
+        {
+          "word": " Okay,",
+          "start": 0.69,
+          "end": 1.47
+        },
+        {
+          "word": " so,",
+          "start": 1.77,
+          "end": 2.47
+        },
+        {
+          "word": " um,",
+          "start": 2.47,
+          "end": 3.13
+        },
+        {
+          "word": " hi.",
+          "start": 3.35,
+          "end": 3.69
+        },
+        {
+          "word": " This",
+          "start": 4.15,
+          "end": 4.35
+        },
+        {
+          "word": " is",
+          "start": 4.35,
+          "end": 4.65
+        },
+        {
+          "word": " a",
+          "start": 4.65,
+          "end": 4.85
+        },
+        {
+          "word": " test",
+          "start": 4.85,
+          "end": 5.13
+        },
+        {
+          "word": " recording.",
+          "start": 5.13,
+          "end": 5.65
+        },
+        {
+          "word": " I'm",
+          "start": 8.09,
+          "end": 8.47
+        },
+        {
+          "word": " just",
+          "start": 8.47,
+          "end": 8.67
+        },
+        {
+          "word": " gonna",
+          "start": 8.67,
+          "end": 9.53
+        },
+        {
+          "word": " talk",
+          "start": 9.53,
+          "end": 10.29
+        },
+        {
+          "word": " for",
+          "start": 10.29,
+          "end": 10.53
+        },
+        {
+          "word": " a",
+          "start": 10.53,
+          "end": 10.69
+        },
+        {
+          "word": " few",
+          "start": 10.69,
+          "end": 10.79
+        },
+        {
+          "word": " minutes",
+          "start": 10.79,
+          "end": 11.19
+        },
+        {
+          "word": " about",
+          "start": 11.19,
+          "end": 11.67
+        }
+      ]
+    },
+    {
+      "id": "seg-0001",
+      "order": 1,
+      "included": false,
+      "start": 11.67,
+      "end": 18.39,
+      "text": "a few different topics so that, um, so that I have something to test my video editor",
+      "words": [
+        {
+          "word": " a",
+          "start": 11.67,
+          "end": 11.89
+        },
+        {
+          "word": " few",
+          "start": 11.89,
+          "end": 12.05
+        },
+        {
+          "word": " different",
+          "start": 12.05,
+          "end": 12.33
+        },
+        {
+          "word": " topics",
+          "start": 12.33,
+          "end": 13.01
+        },
+        {
+          "word": " so",
+          "start": 13.01,
+          "end": 13.41
+        },
+        {
+          "word": " that,",
+          "start": 13.41,
+          "end": 14.07
+        },
+        {
+          "word": " um,",
+          "start": 14.13,
+          "end": 15.01
+        },
+        {
+          "word": " so",
+          "start": 15.51,
+          "end": 15.65
+        },
+        {
+          "word": " that",
+          "start": 15.65,
+          "end": 16.09
+        },
+        {
+          "word": " I",
+          "start": 16.09,
+          "end": 16.33
+        },
+        {
+          "word": " have",
+          "start": 16.33,
+          "end": 16.47
+        },
+        {
+          "word": " something",
+          "start": 16.47,
+          "end": 16.79
+        },
+        {
+          "word": " to",
+          "start": 16.79,
+          "end": 17.21
+        },
+        {
+          "word": " test",
+          "start": 17.21,
+          "end": 17.47
+        },
+        {
+          "word": " my",
+          "start": 17.47,
+          "end": 17.77
+        },
+        {
+          "word": " video",
+          "start": 17.77,
+          "end": 18.09
+        },
+        {
+          "word": " editor",
+          "start": 18.09,
+          "end": 18.39
+        }
+      ]
+    },
+    {
+      "id": "seg-0002",
+      "order": 2,
+      "included": false,
+      "start": 18.39,
+      "end": 18.75,
+      "text": "on.",
+      "words": [
+        {
+          "word": " on.",
+          "start": 18.39,
+          "end": 18.75
+        }
+      ]
+    },
+    {
+      "id": "seg-0003",
+      "order": 0,
+      "included": true,
+      "start": 23.29,
+      "end": 27.55,
+      "text": "Okay, so the first thing I want to talk about is how the transcription step works.",
+      "words": [
+        {
+          "word": " Okay,",
+          "start": 23.29,
+          "end": 23.67
+        },
+        {
+          "word": " so",
+          "start": 24.05,
+          "end": 24.23
+        },
+        {
+          "word": " the",
+          "start": 24.23,
+          "end": 24.35
+        },
+        {
+          "word": " first",
+          "start": 24.35,
+          "end": 24.55
+        },
+        {
+          "word": " thing",
+          "start": 24.55,
+          "end": 24.71
+        },
+        {
+          "word": " I",
+          "start": 24.71,
+          "end": 24.77
+        },
+        {
+          "word": " want",
+          "start": 24.77,
+          "end": 24.93
+        },
+        {
+          "word": " to",
+          "start": 24.93,
+          "end": 25.09
+        },
+        {
+          "word": " talk",
+          "start": 25.09,
+          "end": 25.23
+        },
+        {
+          "word": " about",
+          "start": 25.23,
+          "end": 25.41
+        },
+        {
+          "word": " is",
+          "start": 25.41,
+          "end": 25.57
+        },
+        {
+          "word": " how",
+          "start": 25.57,
+          "end": 25.77
+        },
+        {
+          "word": " the",
+          "start": 25.77,
+          "end": 26.03
+        },
+        {
+          "word": " transcription",
+          "start": 26.03,
+          "end": 26.77
+        },
+        {
+          "word": " step",
+          "start": 26.77,
+          "end": 27.07
+        },
+        {
+          "word": " works.",
+          "start": 27.07,
+          "end": 27.55
+        }
+      ]
+    },
+    {
+      "id": "seg-0004",
+      "order": 2,
+      "included": true,
+      "start": 27.89,
+      "end": 32.07,
+      "text": "Basically, the system takes a raw video file, runs it through a speech-to-text",
+      "words": [
+        {
+          "word": " Basically,",
+          "start": 27.89,
+          "end": 28.37
+        },
+        {
+          "word": " the",
+          "start": 28.43,
+          "end": 28.57
+        },
+        {
+          "word": " system",
+          "start": 28.57,
+          "end": 28.91
+        },
+        {
+          "word": " takes",
+          "start": 28.91,
+          "end": 29.19
+        },
+        {
+          "word": " a",
+          "start": 29.19,
+          "end": 29.43
+        },
+        {
+          "word": " raw",
+          "start": 29.43,
+          "end": 29.63
+        },
+        {
+          "word": " video",
+          "start": 29.63,
+          "end": 30.05
+        },
+        {
+          "word": " file,",
+          "start": 30.05,
+          "end": 30.41
+        },
+        {
+          "word": " runs",
+          "start": 30.69,
+          "end": 30.85
+        },
+        {
+          "word": " it",
+          "start": 30.85,
+          "end": 31.07
+        },
+        {
+          "word": " through",
+          "start": 31.07,
+          "end": 31.31
+        },
+        {
+          "word": " a",
+          "start": 31.31,
+          "end": 31.49
+        },
+        {
+          "word": " speech",
+          "start": 31.49,
+          "end": 31.75
+        },
+        {
+          "word": "-to",
+          "start": 31.75,
+          "end": 31.91
+        },
+        {
+          "word": "-text",
+          "start": 31.91,
+          "end": 32.07
+        }
+      ]
+    },
+    {
+      "id": "seg-0005",
+      "order": 3,
+      "included": true,
+      "start": 32.07,
+      "end": 38.27,
+      "text": "model called Whisper, and gets back a time-stamped transcript so every sentence has an exact",
+      "words": [
+        {
+          "word": " model",
+          "start": 32.07,
+          "end": 32.43
+        },
+        {
+          "word": " called",
+          "start": 32.43,
+          "end": 32.83
+        },
+        {
+          "word": " Whisper,",
+          "start": 32.83,
+          "end": 33.41
+        },
+        {
+          "word": " and",
+          "start": 33.77,
+          "end": 33.83
+        },
+        {
+          "word": " gets",
+          "start": 33.83,
+          "end": 34.11
+        },
+        {
+          "word": " back",
+          "start": 34.11,
+          "end": 34.45
+        },
+        {
+          "word": " a",
+          "start": 34.45,
+          "end": 34.85
+        },
+        {
+          "word": " time",
+          "start": 34.85,
+          "end": 35.17
+        },
+        {
+          "word": "-stamped",
+          "start": 35.17,
+          "end": 35.45
+        },
+        {
+          "word": " transcript",
+          "start": 35.45,
+          "end": 36.15
+        },
+        {
+          "word": " so",
+          "start": 36.15,
+          "end": 36.65
+        },
+        {
+          "word": " every",
+          "start": 36.65,
+          "end": 36.99
+        },
+        {
+          "word": " sentence",
+          "start": 36.99,
+          "end": 37.41
+        },
+        {
+          "word": " has",
+          "start": 37.41,
+          "end": 37.69
+        },
+        {
+          "word": " an",
+          "start": 37.69,
+          "end": 37.83
+        },
+        {
+          "word": " exact",
+          "start": 37.83,
+          "end": 38.27
+        }
+      ]
+    },
+    {
+      "id": "seg-0006",
+      "order": 4,
+      "included": true,
+      "start": 38.27,
+      "end": 40.55,
+      "text": "start and end time in the original video.",
+      "words": [
+        {
+          "word": " start",
+          "start": 38.27,
+          "end": 38.59
+        },
+        {
+          "word": " and",
+          "start": 38.59,
+          "end": 38.89
+        },
+        {
+          "word": " end",
+          "start": 38.89,
+          "end": 39.13
+        },
+        {
+          "word": " time",
+          "start": 39.13,
+          "end": 39.35
+        },
+        {
+          "word": " in",
+          "start": 39.35,
+          "end": 39.45
+        },
+        {
+          "word": " the",
+          "start": 39.45,
+          "end": 39.59
+        },
+        {
+          "word": " original",
+          "start": 39.59,
+          "end": 39.97
+        },
+        {
+          "word": " video.",
+          "start": 39.97,
+          "end": 40.55
+        }
+      ]
+    },
+    {
+      "id": "seg-0007",
+      "order": 1,
+      "included": true,
+      "start": 41.83,
+      "end": 48.11,
+      "text": "Um, yeah, so like, the way it works is you basically, you take the video, right, and",
+      "words": [
+        {
+          "word": " Um,",
+          "start": 41.83,
+          "end": 41.83
+        },
+        {
+          "word": " yeah,",
+          "start": 42.49,
+          "end": 42.67
+        },
+        {
+          "word": " so",
+          "start": 42.85,
+          "end": 42.95
+        },
+        {
+          "word": " like,",
+          "start": 42.95,
+          "end": 43.37
+        },
+        {
+          "word": " the",
+          "start": 43.55,
+          "end": 43.65
+        },
+        {
+          "word": " way",
+          "start": 43.65,
+          "end": 43.89
+        },
+        {
+          "word": " it",
+          "start": 43.89,
+          "end": 43.89
+        },
+        {
+          "word": " works",
+          "start": 43.89,
+          "end": 44.21
+        },
+        {
+          "word": " is",
+          "start": 44.21,
+          "end": 44.57
+        },
+        {
+          "word": " you",
+          "start": 44.57,
+          "end": 45.17
+        },
+        {
+          "word": " basically,",
+          "start": 45.17,
+          "end": 45.83
+        },
+        {
+          "word": " you",
+          "start": 46.05,
+          "end": 46.39
+        },
+        {
+          "word": " take",
+          "start": 46.39,
+          "end": 46.61
+        },
+        {
+          "word": " the",
+          "start": 46.61,
+          "end": 46.77
+        },
+        {
+          "word": " video,",
+          "start": 46.77,
+          "end": 47.05
+        },
+        {
+          "word": " right,",
+          "start": 47.27,
+          "end": 47.57
+        },
+        {
+          "word": " and",
+          "start": 47.87,
+          "end": 48.11
+        }
+      ]
+    },
+    {
+      "id": "seg-0008",
+      "order": 8,
+      "included": false,
+      "start": 48.11,
+      "end": 54.69,
+      "text": "it, uh, it listens to it and it kind of, like, figures out what words are being said,",
+      "words": [
+        {
+          "word": " it,",
+          "start": 48.11,
+          "end": 48.37
+        },
+        {
+          "word": " uh,",
+          "start": 48.37,
+          "end": 49.09
+        },
+        {
+          "word": " it",
+          "start": 49.09,
+          "end": 49.25
+        },
+        {
+          "word": " listens",
+          "start": 49.25,
+          "end": 49.59
+        },
+        {
+          "word": " to",
+          "start": 49.59,
+          "end": 49.85
+        },
+        {
+          "word": " it",
+          "start": 49.85,
+          "end": 50.05
+        },
+        {
+          "word": " and",
+          "start": 50.05,
+          "end": 50.21
+        },
+        {
+          "word": " it",
+          "start": 50.21,
+          "end": 50.49
+        },
+        {
+          "word": " kind",
+          "start": 50.49,
+          "end": 50.71
+        },
+        {
+          "word": " of,",
+          "start": 50.71,
+          "end": 51.23
+        },
+        {
+          "word": " like,",
+          "start": 51.23,
+          "end": 52.25
+        },
+        {
+          "word": " figures",
+          "start": 52.43,
+          "end": 52.75
+        },
+        {
+          "word": " out",
+          "start": 52.75,
+          "end": 53.43
+        },
+        {
+          "word": " what",
+          "start": 53.43,
+          "end": 53.69
+        },
+        {
+          "word": " words",
+          "start": 53.69,
+          "end": 53.93
+        },
+        {
+          "word": " are",
+          "start": 53.93,
+          "end": 54.15
+        },
+        {
+          "word": " being",
+          "start": 54.15,
+          "end": 54.49
+        },
+        {
+          "word": " said,",
+          "start": 54.49,
+          "end": 54.69
+        }
+      ]
+    },
+    {
+      "id": "seg-0009",
+      "order": 9,
+      "included": false,
+      "start": 54.69,
+      "end": 60.01,
+      "text": "you know, and it, um, it knows what time each word happens.",
+      "words": [
+        {
+          "word": " you",
+          "start": 54.69,
+          "end": 54.87
+        },
+        {
+          "word": " know,",
+          "start": 54.87,
+          "end": 55.31
+        },
+        {
+          "word": " and",
+          "start": 55.51,
+          "end": 55.83
+        },
+        {
+          "word": " it,",
+          "start": 55.83,
+          "end": 56.03
+        },
+        {
+          "word": " um,",
+          "start": 56.03,
+          "end": 56.69
+        },
+        {
+          "word": " it",
+          "start": 57.11,
+          "end": 57.39
+        },
+        {
+          "word": " knows",
+          "start": 57.39,
+          "end": 57.89
+        },
+        {
+          "word": " what",
+          "start": 57.89,
+          "end": 58.51
+        },
+        {
+          "word": " time",
+          "start": 58.51,
+          "end": 58.73
+        },
+        {
+          "word": " each",
+          "start": 58.73,
+          "end": 59.05
+        },
+        {
+          "word": " word",
+          "start": 59.05,
+          "end": 59.31
+        },
+        {
+          "word": " happens.",
+          "start": 59.31,
+          "end": 60.01
+        }
+      ]
+    },
+    {
+      "id": "seg-0010",
+      "order": 10,
+      "included": false,
+      "start": 62.39,
+      "end": 67.67,
+      "text": "Oh, actually, random side note, I had coffee this morning and it was way too strong. I",
+      "words": [
+        {
+          "word": " Oh,",
+          "start": 62.39,
+          "end": 62.91
+        },
+        {
+          "word": " actually,",
+          "start": 63.45,
+          "end": 63.67
+        },
+        {
+          "word": " random",
+          "start": 64.11,
+          "end": 64.19
+        },
+        {
+          "word": " side",
+          "start": 64.19,
+          "end": 64.47
+        },
+        {
+          "word": " note,",
+          "start": 64.47,
+          "end": 64.69
+        },
+        {
+          "word": " I",
+          "start": 64.99,
+          "end": 65.03
+        },
+        {
+          "word": " had",
+          "start": 65.03,
+          "end": 65.25
+        },
+        {
+          "word": " coffee",
+          "start": 65.25,
+          "end": 65.53
+        },
+        {
+          "word": " this",
+          "start": 65.53,
+          "end": 65.73
+        },
+        {
+          "word": " morning",
+          "start": 65.73,
+          "end": 65.95
+        },
+        {
+          "word": " and",
+          "start": 65.95,
+          "end": 66.05
+        },
+        {
+          "word": " it",
+          "start": 66.05,
+          "end": 66.15
+        },
+        {
+          "word": " was",
+          "start": 66.15,
+          "end": 66.45
+        },
+        {
+          "word": " way",
+          "start": 66.45,
+          "end": 66.67
+        },
+        {
+          "word": " too",
+          "start": 66.67,
+          "end": 66.97
+        },
+        {
+          "word": " strong.",
+          "start": 66.97,
+          "end": 67.19
+        },
+        {
+          "word": " I",
+          "start": 67.63,
+          "end": 67.67
+        }
+      ]
+    },
+    {
+      "id": "seg-0011",
+      "order": 11,
+      "included": false,
+      "start": 67.67,
+      "end": 72.67,
+      "text": "probably shouldn't have made it that dark. Anyway, the second part is a segment selection,",
+      "words": [
+        {
+          "word": " probably",
+          "start": 67.67,
+          "end": 68.11
+        },
+        {
+          "word": " shouldn't",
+          "start": 68.11,
+          "end": 68.31
+        },
+        {
+          "word": " have",
+          "start": 68.31,
+          "end": 68.51
+        },
+        {
+          "word": " made",
+          "start": 68.51,
+          "end": 68.67
+        },
+        {
+          "word": " it",
+          "start": 68.67,
+          "end": 68.79
+        },
+        {
+          "word": " that",
+          "start": 68.79,
+          "end": 69.05
+        },
+        {
+          "word": " dark.",
+          "start": 69.05,
+          "end": 69.29
+        },
+        {
+          "word": " Anyway,",
+          "start": 69.89,
+          "end": 70.09
+        },
+        {
+          "word": " the",
+          "start": 70.61,
+          "end": 70.71
+        },
+        {
+          "word": " second",
+          "start": 70.71,
+          "end": 70.97
+        },
+        {
+          "word": " part",
+          "start": 70.97,
+          "end": 71.29
+        },
+        {
+          "word": " is",
+          "start": 71.29,
+          "end": 71.53
+        },
+        {
+          "word": " a",
+          "start": 71.53,
+          "end": 71.77
+        },
+        {
+          "word": " segment",
+          "start": 71.77,
+          "end": 72.09
+        },
+        {
+          "word": " selection,",
+          "start": 72.09,
+          "end": 72.67
+        }
+      ]
+    },
+    {
+      "id": "seg-0012",
+      "order": 12,
+      "included": false,
+      "start": 73.15,
+      "end": 77.97,
+      "text": "and LLM reads through all of the transcript segments along with a brief, like,",
+      "words": [
+        {
+          "word": " and",
+          "start": 73.15,
+          "end": 73.35
+        },
+        {
+          "word": " LLM",
+          "start": 73.35,
+          "end": 73.81
+        },
+        {
+          "word": " reads",
+          "start": 73.81,
+          "end": 74.13
+        },
+        {
+          "word": " through",
+          "start": 74.13,
+          "end": 74.43
+        },
+        {
+          "word": " all",
+          "start": 74.43,
+          "end": 74.67
+        },
+        {
+          "word": " of",
+          "start": 74.67,
+          "end": 74.79
+        },
+        {
+          "word": " the",
+          "start": 74.79,
+          "end": 75.01
+        },
+        {
+          "word": " transcript",
+          "start": 75.01,
+          "end": 75.39
+        },
+        {
+          "word": " segments",
+          "start": 75.39,
+          "end": 75.93
+        },
+        {
+          "word": " along",
+          "start": 75.93,
+          "end": 76.37
+        },
+        {
+          "word": " with",
+          "start": 76.37,
+          "end": 76.61
+        },
+        {
+          "word": " a",
+          "start": 76.61,
+          "end": 76.87
+        },
+        {
+          "word": " brief,",
+          "start": 76.87,
+          "end": 77.13
+        },
+        {
+          "word": " like,",
+          "start": 77.61,
+          "end": 77.97
+        }
+      ]
+    },
+    {
+      "id": "seg-0013",
+      "order": 5,
+      "included": true,
+      "start": 78.09,
+      "end": 82.75,
+      "text": "only keep the technical parts, and decides which ones to keep and which to cut.",
+      "words": [
+        {
+          "word": " only",
+          "start": 78.09,
+          "end": 78.49
+        },
+        {
+          "word": " keep",
+          "start": 78.49,
+          "end": 78.71
+        },
+        {
+          "word": " the",
+          "start": 78.71,
+          "end": 78.93
+        },
+        {
+          "word": " technical",
+          "start": 78.93,
+          "end": 79.19
+        },
+        {
+          "word": " parts,",
+          "start": 79.19,
+          "end": 79.59
+        },
+        {
+          "word": " and",
+          "start": 80.17,
+          "end": 80.39
+        },
+        {
+          "word": " decides",
+          "start": 80.39,
+          "end": 80.87
+        },
+        {
+          "word": " which",
+          "start": 80.87,
+          "end": 81.19
+        },
+        {
+          "word": " ones",
+          "start": 81.19,
+          "end": 81.37
+        },
+        {
+          "word": " to",
+          "start": 81.37,
+          "end": 81.55
+        },
+        {
+          "word": " keep",
+          "start": 81.55,
+          "end": 81.77
+        },
+        {
+          "word": " and",
+          "start": 81.77,
+          "end": 81.97
+        },
+        {
+          "word": " which",
+          "start": 81.97,
+          "end": 82.23
+        },
+        {
+          "word": " to",
+          "start": 82.23,
+          "end": 82.41
+        },
+        {
+          "word": " cut.",
+          "start": 82.41,
+          "end": 82.75
+        }
+      ]
+    },
+    {
+      "id": "seg-0014",
+      "order": 14,
+      "included": false,
+      "start": 83.27,
+      "end": 86.87,
+      "text": "Kind of like how a human editor would skim through and mark things up.",
+      "words": [
+        {
+          "word": " Kind",
+          "start": 83.27,
+          "end": 83.51
+        },
+        {
+          "word": " of",
+          "start": 83.51,
+          "end": 83.65
+        },
+        {
+          "word": " like",
+          "start": 83.65,
+          "end": 83.79
+        },
+        {
+          "word": " how",
+          "start": 83.79,
+          "end": 84.05
+        },
+        {
+          "word": " a",
+          "start": 84.05,
+          "end": 84.25
+        },
+        {
+          "word": " human",
+          "start": 84.25,
+          "end": 84.45
+        },
+        {
+          "word": " editor",
+          "start": 84.45,
+          "end": 84.79
+        },
+        {
+          "word": " would",
+          "start": 84.79,
+          "end": 85.15
+        },
+        {
+          "word": " skim",
+          "start": 85.15,
+          "end": 85.43
+        },
+        {
+          "word": " through",
+          "start": 85.43,
+          "end": 85.79
+        },
+        {
+          "word": " and",
+          "start": 85.79,
+          "end": 86.09
+        },
+        {
+          "word": " mark",
+          "start": 86.09,
+          "end": 86.27
+        },
+        {
+          "word": " things",
+          "start": 86.27,
+          "end": 86.55
+        },
+        {
+          "word": " up.",
+          "start": 86.55,
+          "end": 86.87
+        }
+      ]
+    },
+    {
+      "id": "seg-0015",
+      "order": 6,
+      "included": true,
+      "start": 92.54,
+      "end": 98.58,
+      "text": "And the last piece, the one I'm most excited about, is that the system can actually splice",
+      "words": [
+        {
+          "word": " And",
+          "start": 92.54,
+          "end": 93.2
+        },
+        {
+          "word": " the",
+          "start": 93.2,
+          "end": 93.38
+        },
+        {
+          "word": " last",
+          "start": 93.38,
+          "end": 93.74
+        },
+        {
+          "word": " piece,",
+          "start": 93.74,
+          "end": 94.18
+        },
+        {
+          "word": " the",
+          "start": 94.3,
+          "end": 94.52
+        },
+        {
+          "word": " one",
+          "start": 94.52,
+          "end": 94.6
+        },
+        {
+          "word": " I'm",
+          "start": 94.6,
+          "end": 94.76
+        },
+        {
+          "word": " most",
+          "start": 94.76,
+          "end": 95.06
+        },
+        {
+          "word": " excited",
+          "start": 95.06,
+          "end": 95.42
+        },
+        {
+          "word": " about,",
+          "start": 95.42,
+          "end": 95.94
+        },
+        {
+          "word": " is",
+          "start": 96.48,
+          "end": 96.62
+        },
+        {
+          "word": " that",
+          "start": 96.62,
+          "end": 96.78
+        },
+        {
+          "word": " the",
+          "start": 96.78,
+          "end": 96.96
+        },
+        {
+          "word": " system",
+          "start": 96.96,
+          "end": 97.32
+        },
+        {
+          "word": " can",
+          "start": 97.32,
+          "end": 97.7
+        },
+        {
+          "word": " actually",
+          "start": 97.7,
+          "end": 98.22
+        },
+        {
+          "word": " splice",
+          "start": 98.22,
+          "end": 98.58
+        }
+      ]
+    },
+    {
+      "id": "seg-0016",
+      "order": 7,
+      "included": true,
+      "start": 98.58,
+      "end": 105.68,
+      "text": "the footage back together automatically using FMPEG. So you end up with a fully edited",
+      "words": [
+        {
+          "word": " the",
+          "start": 98.58,
+          "end": 98.82
+        },
+        {
+          "word": " footage",
+          "start": 98.82,
+          "end": 99.14
+        },
+        {
+          "word": " back",
+          "start": 99.14,
+          "end": 99.4
+        },
+        {
+          "word": " together",
+          "start": 99.4,
+          "end": 99.8
+        },
+        {
+          "word": " automatically",
+          "start": 99.8,
+          "end": 100.46
+        },
+        {
+          "word": " using",
+          "start": 100.46,
+          "end": 101.52
+        },
+        {
+          "word": " FMPEG.",
+          "start": 101.52,
+          "end": 102.8
+        },
+        {
+          "word": " So",
+          "start": 103.02,
+          "end": 103.44
+        },
+        {
+          "word": " you",
+          "start": 103.44,
+          "end": 103.78
+        },
+        {
+          "word": " end",
+          "start": 103.78,
+          "end": 104.02
+        },
+        {
+          "word": " up",
+          "start": 104.02,
+          "end": 104.26
+        },
+        {
+          "word": " with",
+          "start": 104.26,
+          "end": 104.66
+        },
+        {
+          "word": " a",
+          "start": 104.66,
+          "end": 104.88
+        },
+        {
+          "word": " fully",
+          "start": 104.88,
+          "end": 105.32
+        },
+        {
+          "word": " edited",
+          "start": 105.32,
+          "end": 105.68
+        }
+      ]
+    },
+    {
+      "id": "seg-0017",
+      "order": 17,
+      "included": false,
+      "start": 105.68,
+      "end": 111.1,
+      "text": "video without ever opening a timeline editor by hand. That part feels the most like",
+      "words": [
+        {
+          "word": " video",
+          "start": 105.68,
+          "end": 106.16
+        },
+        {
+          "word": " without",
+          "start": 106.16,
+          "end": 106.54
+        },
+        {
+          "word": " ever",
+          "start": 106.54,
+          "end": 107.04
+        },
+        {
+          "word": " opening",
+          "start": 107.04,
+          "end": 107.38
+        },
+        {
+          "word": " a",
+          "start": 107.38,
+          "end": 107.66
+        },
+        {
+          "word": " timeline",
+          "start": 107.66,
+          "end": 107.94
+        },
+        {
+          "word": " editor",
+          "start": 107.94,
+          "end": 108.32
+        },
+        {
+          "word": " by",
+          "start": 108.32,
+          "end": 108.64
+        },
+        {
+          "word": " hand.",
+          "start": 108.64,
+          "end": 108.96
+        },
+        {
+          "word": " That",
+          "start": 109.54,
+          "end": 109.76
+        },
+        {
+          "word": " part",
+          "start": 109.76,
+          "end": 109.98
+        },
+        {
+          "word": " feels",
+          "start": 109.98,
+          "end": 110.32
+        },
+        {
+          "word": " the",
+          "start": 110.32,
+          "end": 110.6
+        },
+        {
+          "word": " most",
+          "start": 110.6,
+          "end": 110.88
+        },
+        {
+          "word": " like",
+          "start": 110.88,
+          "end": 111.1
+        }
+      ]
+    },
+    {
+      "id": "seg-0018",
+      "order": 18,
+      "included": false,
+      "start": 111.1,
+      "end": 118.22,
+      "text": "magic to me. So, um, yeah, that's basically it. That's the three parts, transcription,",
+      "words": [
+        {
+          "word": " magic",
+          "start": 111.1,
+          "end": 111.4
+        },
+        {
+          "word": " to",
+          "start": 111.4,
+          "end": 111.6
+        },
+        {
+          "word": " me.",
+          "start": 111.6,
+          "end": 111.94
+        },
+        {
+          "word": " So,",
+          "start": 112.5,
+          "end": 112.78
+        },
+        {
+          "word": " um,",
+          "start": 113.12,
+          "end": 113.12
+        },
+        {
+          "word": " yeah,",
+          "start": 113.28,
+          "end": 113.54
+        },
+        {
+          "word": " that's",
+          "start": 113.7,
+          "end": 113.86
+        },
+        {
+          "word": " basically",
+          "start": 113.86,
+          "end": 114.66
+        },
+        {
+          "word": " it.",
+          "start": 114.66,
+          "end": 115.18
+        },
+        {
+          "word": " That's",
+          "start": 115.72,
+          "end": 116.36
+        },
+        {
+          "word": " the",
+          "start": 116.36,
+          "end": 116.44
+        },
+        {
+          "word": " three",
+          "start": 116.44,
+          "end": 116.68
+        },
+        {
+          "word": " parts,",
+          "start": 116.68,
+          "end": 117.14
+        },
+        {
+          "word": " transcription,",
+          "start": 117.38,
+          "end": 118.22
+        }
+      ]
+    },
+    {
+      "id": "seg-0019",
+      "order": 19,
+      "included": false,
+      "start": 118.22,
+      "end": 124.08,
+      "text": "and then the, um, the selection thing, and then the last one with the video stuff.",
+      "words": [
+        {
+          "word": " and",
+          "start": 118.22,
+          "end": 118.52
+        },
+        {
+          "word": " then",
+          "start": 118.52,
+          "end": 119.26
+        },
+        {
+          "word": " the,",
+          "start": 119.26,
+          "end": 119.66
+        },
+        {
+          "word": " um,",
+          "start": 119.66,
+          "end": 120.3
+        },
+        {
+          "word": " the",
+          "start": 120.44,
+          "end": 120.64
+        },
+        {
+          "word": " selection",
+          "start": 120.64,
+          "end": 121.08
+        },
+        {
+          "word": " thing,",
+          "start": 121.08,
+          "end": 121.56
+        },
+        {
+          "word": " and",
+          "start": 122.1,
+          "end": 122.26
+        },
+        {
+          "word": " then",
+          "start": 122.26,
+          "end": 122.52
+        },
+        {
+          "word": " the",
+          "start": 122.52,
+          "end": 122.66
+        },
+        {
+          "word": " last",
+          "start": 122.66,
+          "end": 122.88
+        },
+        {
+          "word": " one",
+          "start": 122.88,
+          "end": 123.06
+        },
+        {
+          "word": " with",
+          "start": 123.06,
+          "end": 123.32
+        },
+        {
+          "word": " the",
+          "start": 123.32,
+          "end": 123.52
+        },
+        {
+          "word": " video",
+          "start": 123.52,
+          "end": 123.76
+        },
+        {
+          "word": " stuff.",
+          "start": 123.76,
+          "end": 124.08
+        }
+      ]
+    },
+    {
+      "id": "seg-0020",
+      "order": 20,
+      "included": false,
+      "start": 126.08,
+      "end": 130.6,
+      "text": "Okay, I think that's everything I wanted to cover. Thanks for watching, I guess. Bye.",
+      "words": [
+        {
+          "word": " Okay,",
+          "start": 126.08,
+          "end": 126.26
+        },
+        {
+          "word": " I",
+          "start": 126.36,
+          "end": 126.42
+        },
+        {
+          "word": " think",
+          "start": 126.42,
+          "end": 126.56
+        },
+        {
+          "word": " that's",
+          "start": 126.56,
+          "end": 127.08
+        },
+        {
+          "word": " everything",
+          "start": 127.08,
+          "end": 127.32
+        },
+        {
+          "word": " I",
+          "start": 127.32,
+          "end": 127.44
+        },
+        {
+          "word": " wanted",
+          "start": 127.44,
+          "end": 127.64
+        },
+        {
+          "word": " to",
+          "start": 127.64,
+          "end": 127.8
+        },
+        {
+          "word": " cover.",
+          "start": 127.8,
+          "end": 128.1
+        },
+        {
+          "word": " Thanks",
+          "start": 128.56,
+          "end": 128.82
+        },
+        {
+          "word": " for",
+          "start": 128.82,
+          "end": 129.12
+        },
+        {
+          "word": " watching,",
+          "start": 129.12,
+          "end": 129.48
+        },
+        {
+          "word": " I",
+          "start": 129.7,
+          "end": 129.78
+        },
+        {
+          "word": " guess.",
+          "start": 129.78,
+          "end": 130.08
+        },
+        {
+          "word": " Bye.",
+          "start": 130.4,
+          "end": 130.6
+        }
+      ]
+    }
+  ]
+}
