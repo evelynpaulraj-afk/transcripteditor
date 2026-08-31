@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Transcript Editor</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>
+<style>
+  body { font-family: -apple-system, Segoe UI, sans-serif; background: #f4f6f8; margin: 0; padding: 24px; }
+  h1 { font-size: 18px; color: #1b222c; }
+  #stats { color: #5b6b79; margin-bottom: 16px; font-size: 14px; }
+  #layout { display: flex; gap: 24px; align-items: flex-start; }
+  #list { flex: 1; max-width: 640px; }
+  #preview-panel { position: sticky; top: 24px; width: 380px; }
+  #preview-panel video { width: 100%; border-radius: 8px; background: #000; }
+  #previewBtn {
+    width: 100%; margin-top: 10px; background: #1C7293; color: white; border: none;
+    padding: 10px; border-radius: 6px; font-size: 14px; cursor: pointer;
+  }
+  #previewBtn:hover { background: #15566f; }
+  #previewStatus { font-size: 12px; color: #5b6b79; margin-top: 8px; min-height: 16px; }
+  .segment {
+    background: white; border: 1px solid #dce6ec; border-radius: 8px;
+    padding: 12px 14px; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 10px;
+    cursor: grab;
+  }
+  .segment.excluded { opacity: 0.45; background: #f0f0f0; }
+  .segment.playing { border-color: #1C7293; box-shadow: 0 0 0 2px #1C729355; }
+  .segment .handle { color: #9aa; font-size: 18px; padding-top: 2px; }
+  .segment .content { flex: 1; cursor: pointer; }
+  .segment .meta { font-size: 11px; color: #5b6b79; margin-bottom: 4px; }
+  .segment .text { font-size: 14px; color: #1b222c; }
+  .segment.excluded .text { text-decoration: line-through; }
+  .segment input[type=checkbox] { margin-top: 4px; width: 16px; height: 16px; }
+  #saveBtn {
+    background: #065A82; color: white; border: none; padding: 10px 20px;
+    border-radius: 6px; font-size: 14px; cursor: pointer; margin-top: 16px;
+  }
+  #saveBtn:hover { background: #054766; }
+  #savedMsg { color: #1C7293; margin-left: 12px; font-size: 13px; display: none; }
+</style>
+</head>
+<body>
+
+<h1>Transcript Editor — drag to reorder, uncheck to cut</h1>
+<div id="stats">Loading...</div>
+
+<div id="layout">
+  <div id="list"></div>
+
+  <div id="preview-panel">
+    <video id="videoPlayer" controls></video>
+    <button id="previewBtn">▶ Preview Edited Sequence</button>
+    <div id="previewStatus"></div>
+    <button id="saveBtn">Save Changes</button>
+    <span id="savedMsg">Saved ✓</span>
+  </div>
+</div>
+
+<script>
+let segments = [];
+let editRanges = [];       // kept segments, in edit order, with original {start, end}
+let currentRangeIndex = -1;
+let previewing = false;
+
+const video = document.getElementById("videoPlayer");
+
+async function loadProject() {
+  const res = await fetch("/api/project");
+  const project = await res.json();
+  segments = project.segments;
+  video.src = "/video";
+  render();
+}
+
+function render() {
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+  segments.forEach(seg => {
+    const div = document.createElement("div");
+    div.className = "segment" + (seg.included ? "" : " excluded");
+    div.dataset.id = seg.id;
+    div.innerHTML = `
+      <span class="handle">⋮⋮</span>
+      <input type="checkbox" ${seg.included ? "checked" : ""} data-id="${seg.id}">
+      <div class="content" data-jump="${seg.id}">
+        <div class="meta">${seg.start.toFixed(1)}s – ${seg.end.toFixed(1)}s (original position)</div>
+        <div class="text">${seg.text}</div>
+      </div>
+    `;
+    list.appendChild(div);
+  });
+  updateStats();
+  rebuildEditRanges();
+
+  list.querySelectorAll("input[type=checkbox]").forEach(cb => {
+    cb.addEventListener("change", e => {
+      const seg = segments.find(s => s.id === e.target.dataset.id);
+      seg.included = e.target.checked;
+      render();
+    });
+  });
+
+  // Click a segment's text to jump the raw video to that point (quick spot-check,
+  // independent of the stitched preview)
+  list.querySelectorAll(".content").forEach(el => {
+    el.addEventListener("click", () => {
+      const seg = segments.find(s => s.id === el.dataset.jump);
+      previewing = false;
+      video.currentTime = seg.start;
+      video.play();
+    });
+  });
+}
+
+function rebuildEditRanges() {
+  editRanges = segments
+    .filter(s => s.included)
+    .sort((a, b) => a.order - b.order)
+    .map(s => ({ id: s.id, start: s.start, end: s.end }));
+}
+
+function updateStats() {
+  const kept = segments.filter(s => s.included);
+  const totalSec = kept.reduce((sum, s) => sum + (s.end - s.start), 0);
+  document.getElementById("stats").textContent =
+    `${kept.length}/${segments.length} segments kept — ~${totalSec.toFixed(0)}s final length`;
+}
+
+new Sortable(document.getElementById("list"), {
+  handle: ".handle",
+  animation: 150,
+  onEnd: () => {
+    const ids = [...document.querySelectorAll(".segment")].map(el => el.dataset.id);
+    ids.forEach((id, i) => {
+      const seg = segments.find(s => s.id === id);
+      seg.order = i;
+    });
+    segments.sort((a, b) => a.order - b.order);
+    rebuildEditRanges();
+  },
+});
+
+document.getElementById("previewBtn").addEventListener("click", () => {
+  if (editRanges.length === 0) return;
+  previewing = true;
+  currentRangeIndex = 0;
+  video.currentTime = editRanges[0].start;
+  video.play();
+  updatePreviewStatus();
+});
+
+// The core trick: while previewing, watch playback time and jump the moment
+// we hit the end of the current kept range — this is what "skips the cuts" live.
+video.addEventListener("timeupdate", () => {
+  if (!previewing || currentRangeIndex === -1) return;
+
+  const current = editRanges[currentRangeIndex];
+  highlightPlayingSegment(current.id);
+
+  if (video.currentTime >= current.end - 0.05) {
+    const next = editRanges[currentRangeIndex + 1];
+    if (next) {
+      currentRangeIndex++;
+      video.currentTime = next.start;
+      updatePreviewStatus();
+    } else {
+      previewing = false;
+      video.pause();
+      currentRangeIndex = -1;
+      highlightPlayingSegment(null);
+      document.getElementById("previewStatus").textContent = "Preview finished.";
+    }
+  }
+});
+
+function updatePreviewStatus() {
+  document.getElementById("previewStatus").textContent =
+    `Playing segment ${currentRangeIndex + 1} of ${editRanges.length}`;
+}
+
+function highlightPlayingSegment(id) {
+  document.querySelectorAll(".segment").forEach(el => {
+    el.classList.toggle("playing", el.dataset.id === id);
+  });
+}
+
+document.getElementById("saveBtn").addEventListener("click", async () => {
+  const payload = segments.map(s => ({ id: s.id, order: s.order, included: s.included }));
+  await fetch("/api/project", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ segments: payload }),
+  });
+  const msg = document.getElementById("savedMsg");
+  msg.style.display = "inline";
+  setTimeout(() => (msg.style.display = "none"), 1500);
+});
+
+loadProject();
+</script>
+</body>
+</html>

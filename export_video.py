@@ -18,31 +18,33 @@ def get_included_segments_in_order(project: dict) -> list:
     return included
 
 
-def build_keep_ranges(segments: list, pad: float = 0.08) -> list:
+def build_keep_ranges(segments: list, pad: float = 0.08, max_pause: float = 1.2) -> list:
     """
-    Merge consecutive included segments into continuous ranges whenever they
-    were adjacent in the ORIGINAL video and haven't been reordered — this
-    preserves natural pauses instead of chopping them out.
-    A small pad is added only at true cut boundaries, to avoid clipping breath/word onsets.
+    Merge consecutive included segments into continuous ranges when they were
+    adjacent in the ORIGINAL video AND the gap between them is short (a natural
+    breath, not dead air). Gaps longer than max_pause are treated as a real cut
+    boundary, even if nothing was excluded there — this trims long pauses.
     """
     ranges = []
     for seg in segments:
-        orig_index = int(seg["id"].split("-")[1])  # seg-0004 -> 4
-        if ranges and ranges[-1]["_last_orig_index"] + 1 == orig_index:
-            # Contiguous with the previous kept segment in the source video:
-            # extend the range instead of starting a new clip (keeps the pause)
-            ranges[-1]["end"] = seg["end"]
-            ranges[-1]["_last_orig_index"] = orig_index
-        else:
-            # Not contiguous (something was cut here, or it was reordered):
-            # start a fresh range, this boundary is a real cut
-            ranges.append({
-                "start": seg["start"],
-                "end": seg["end"],
-                "_last_orig_index": orig_index,
-            })
+        orig_index = int(seg["id"].split("-")[1])
 
-    # Apply small padding only at true cut edges, without overlapping neighbors
+        if ranges:
+            prev = ranges[-1]
+            contiguous_id = prev["_last_orig_index"] + 1 == orig_index
+            gap = seg["start"] - prev["end"]  # actual silence duration in the source video
+
+            if contiguous_id and gap <= max_pause:
+                prev["end"] = seg["end"]
+                prev["_last_orig_index"] = orig_index
+                continue  # merged — skip creating a new range
+
+        ranges.append({
+            "start": seg["start"],
+            "end": seg["end"],
+            "_last_orig_index": orig_index,
+        })
+
     for i, r in enumerate(ranges):
         r["start"] = max(0, r["start"] - pad) if i > 0 else r["start"]
         r["end"] = r["end"] + pad if i < len(ranges) - 1 else r["end"]
