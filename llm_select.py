@@ -1,10 +1,18 @@
 # llm_select.py
 import json
 import sys
+import os
+from dotenv import load_dotenv
 from openai import OpenAI
 
-client = OpenAI(base_url="http://localhost:11434/v1", api_key="ollama")
-MODEL = "llama3.1:8b"
+load_dotenv()
+
+client = OpenAI(
+    api_key=os.getenv("GEMINI_API_KEY"),
+    base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+)
+
+MODEL = "gemini-3.6-flash"
 
 
 def load_project(path): 
