@@ -29,7 +29,8 @@
           "start": 3.35,
           "end": 3.69
         }
-      ]
+      ],
+      "text_compressed": "Hi."
     },
     {
       "id": "seg-0001",
@@ -64,7 +65,8 @@
           "start": 5.13,
           "end": 5.65
         }
-      ]
+      ],
+      "text_compressed": "This is a test recording."
     },
     {
       "id": "seg-0002",
@@ -209,7 +211,8 @@
           "start": 18.39,
           "end": 18.75
         }
-      ]
+      ],
+      "text_compressed": "I'm just gonna talk for a few minutes about a few different topics so that I have something to test my video editor on."
     },
     {
       "id": "seg-0003",
@@ -299,7 +302,8 @@
           "start": 27.07,
           "end": 27.55
         }
-      ]
+      ],
+      "text_compressed": "The first thing I want to talk about is how the transcription step works."
     },
     {
       "id": "seg-0004",
@@ -504,7 +508,8 @@
           "start": 39.97,
           "end": 40.55
         }
-      ]
+      ],
+      "text_compressed": "The system takes a raw video file, runs it through a speech-to-text model called Whisper, and gets back a time-stamped transcript so every sentence has an exact start and end time in the original video."
     },
     {
       "id": "seg-0005",
@@ -749,7 +754,8 @@
           "start": 59.31,
           "end": 60.01
         }
-      ]
+      ],
+      "text_compressed": "The way it works is you take the video and it listens to it and figures out what words are being said and it knows what time each word happens."
     },
     {
       "id": "seg-0006",
@@ -839,7 +845,8 @@
           "start": 66.97,
           "end": 67.19
         }
-      ]
+      ],
+      "text_compressed": "Random side note, I had coffee this morning and it was way too strong."
     },
     {
       "id": "seg-0007",
@@ -889,7 +896,8 @@
           "start": 69.05,
           "end": 69.29
         }
-      ]
+      ],
+      "text_compressed": "I probably shouldn't have made it that dark."
     },
     {
       "id": "seg-0008",
@@ -1084,7 +1092,8 @@
           "start": 82.41,
           "end": 82.75
         }
-      ]
+      ],
+      "text_compressed": "The second part is a segment selection, and LLM reads through all of the transcript segments along with a brief, only keep the technical parts, and decides which ones to keep and which to cut."
     },
     {
       "id": "seg-0009",
@@ -1164,7 +1173,8 @@
           "start": 86.55,
           "end": 86.87
         }
-      ]
+      ],
+      "text_compressed": "Kind of like how a human editor would skim through and mark things up."
     },
     {
       "id": "seg-0010",
@@ -1294,7 +1304,8 @@
           "start": 101.52,
           "end": 102.8
         }
-      ]
+      ],
+      "text_compressed": "And the last piece, the one I'm most excited about, is that the system can splice the footage back together automatically using FMPEG."
     },
     {
       "id": "seg-0011",
@@ -1389,7 +1400,8 @@
           "start": 108.64,
           "end": 108.96
         }
-      ]
+      ],
+      "text_compressed": "You end up with a fully edited video without ever opening a timeline editor by hand."
     },
     {
       "id": "seg-0012",
@@ -1444,7 +1456,8 @@
           "start": 111.6,
           "end": 111.94
         }
-      ]
+      ],
+      "text_compressed": "That part feels the most like magic to me."
     },
     {
       "id": "seg-0013",
@@ -1484,7 +1497,8 @@
           "start": 114.66,
           "end": 115.18
         }
-      ]
+      ],
+      "text_compressed": "That's basically it."
     },
     {
       "id": "seg-0014",
@@ -1599,7 +1613,8 @@
           "start": 123.76,
           "end": 124.08
         }
-      ]
+      ],
+      "text_compressed": "That's the three parts, transcription, and then the selection thing, and then the last one with the video stuff."
     },
     {
       "id": "seg-0015",
@@ -1654,7 +1669,8 @@
           "start": 127.8,
           "end": 128.1
         }
-      ]
+      ],
+      "text_compressed": "I think that's everything I wanted to cover."
     },
     {
       "id": "seg-0016",
@@ -1689,7 +1705,8 @@
           "start": 129.78,
           "end": 130.08
         }
-      ]
+      ],
+      "text_compressed": "Thanks for watching."
     },
     {
       "id": "seg-0017",
@@ -1704,7 +1721,8 @@
           "start": 130.4,
           "end": 130.6
         }
-      ]
+      ],
+      "text_compressed": "Bye."
     }
   ]
 }
