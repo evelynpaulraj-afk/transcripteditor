@@ -5,6 +5,7 @@ import os
 from collections import Counter
 from dotenv import load_dotenv
 from openai import OpenAI
+from relevance_filter import filter_by_relevance
 
 load_dotenv()
 
@@ -260,9 +261,19 @@ def run_selection_once(beats, segment_by_id, brief, target_length, allow_reorder
     chosen = [(e["beat_id"], e.get("reason", "")) for e in entries if e.get("beat_id") in beat_by_label]
     return chosen
 
-
+    
 def select_segments(project: dict, brief: str, target_length=None, allow_reorder: bool = False) -> dict:
-    segments = project["segments"]
+    all_segments = project["segments"]
+
+    kept_segments, dropped_segments = filter_by_relevance(all_segments, brief)
+    if dropped_segments:
+        dropped_ids = [s["id"] for s in dropped_segments]
+        print(f"Relevance pre-filter: dropped {len(dropped_segments)}/{len(all_segments)} low-relevance "
+              f"segments before sending to LLM: {dropped_ids}")
+        for s in dropped_segments:
+            s["included"] = False  # explicitly excluded before the LLM ever sees them
+
+    segments = kept_segments  # everything below this line only ever sees the filtered set
     segment_by_id = {s["id"]: s for s in segments}
 
     compress_segments_with_llm(segments)
@@ -311,6 +322,8 @@ def select_segments(project: dict, brief: str, target_length=None, allow_reorder
     for label in final_labels:
         final_sequence.extend(beat_by_label[label])
 
+    # Reset included/order only for segments the LLM actually considered.
+    # Dropped segments already had included=False set above and are left untouched.
     for seg in segments:
         seg["included"] = False
     for new_order, sid in enumerate(final_sequence):
