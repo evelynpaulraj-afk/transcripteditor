@@ -4,7 +4,7 @@
     {
       "id": "seg-0000",
       "order": 0,
-      "included": true,
+      "included": false,
       "start": 0.69,
       "end": 3.69,
       "text": "Okay, so, um, hi.",
@@ -34,7 +34,7 @@
     {
       "id": "seg-0001",
       "order": 1,
-      "included": true,
+      "included": false,
       "start": 4.15,
       "end": 5.65,
       "text": "This is a test recording.",
@@ -69,7 +69,7 @@
     {
       "id": "seg-0002",
       "order": 2,
-      "included": true,
+      "included": false,
       "start": 8.09,
       "end": 18.75,
       "text": "I'm just gonna talk for a few minutes about a few different topics so that, um, so that I have something to test my video editor on.",
@@ -213,8 +213,8 @@
     },
     {
       "id": "seg-0003",
-      "order": 3,
-      "included": true,
+      "order": 4,
+      "included": false,
       "start": 23.29,
       "end": 27.55,
       "text": "Okay, so the first thing I want to talk about is how the transcription step works.",
@@ -303,8 +303,8 @@
     },
     {
       "id": "seg-0004",
-      "order": 4,
-      "included": true,
+      "order": 3,
+      "included": false,
       "start": 27.89,
       "end": 40.55,
       "text": "Basically, the system takes a raw video file, runs it through a speech-to-text model called Whisper, and gets back a time-stamped transcript so every sentence has an exact start and end time in the original video.",
@@ -509,7 +509,7 @@
     {
       "id": "seg-0005",
       "order": 5,
-      "included": true,
+      "included": false,
       "start": 41.83,
       "end": 60.01,
       "text": "Um, yeah, so like, the way it works is you basically, you take the video, right, and it, uh, it listens to it and it kind of, like, figures out what words are being said, you know, and it, um, it knows what time each word happens.",
@@ -754,7 +754,7 @@
     {
       "id": "seg-0006",
       "order": 6,
-      "included": true,
+      "included": false,
       "start": 62.39,
       "end": 67.19,
       "text": "Oh, actually, random side note, I had coffee this morning and it was way too strong.",
@@ -844,7 +844,7 @@
     {
       "id": "seg-0007",
       "order": 7,
-      "included": true,
+      "included": false,
       "start": 67.63,
       "end": 69.29,
       "text": "I probably shouldn't have made it that dark.",
@@ -1448,8 +1448,8 @@
     },
     {
       "id": "seg-0013",
-      "order": 13,
-      "included": true,
+      "order": 14,
+      "included": false,
       "start": 112.5,
       "end": 115.18,
       "text": "So, um, yeah, that's basically it.",
@@ -1488,8 +1488,8 @@
     },
     {
       "id": "seg-0014",
-      "order": 14,
-      "included": true,
+      "order": 15,
+      "included": false,
       "start": 115.72,
       "end": 124.08,
       "text": "That's the three parts, transcription, and then the, um, the selection thing, and then the last one with the video stuff.",
@@ -1603,8 +1603,8 @@
     },
     {
       "id": "seg-0015",
-      "order": 15,
-      "included": true,
+      "order": 13,
+      "included": false,
       "start": 126.08,
       "end": 128.1,
       "text": "Okay, I think that's everything I wanted to cover.",
@@ -1659,7 +1659,7 @@
     {
       "id": "seg-0016",
       "order": 16,
-      "included": true,
+      "included": false,
       "start": 128.56,
       "end": 130.08,
       "text": "Thanks for watching, I guess.",
@@ -1694,7 +1694,7 @@
     {
       "id": "seg-0017",
       "order": 17,
-      "included": true,
+      "included": false,
       "start": 130.4,
       "end": 130.6,
       "text": "Bye.",

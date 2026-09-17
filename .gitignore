@@ -1,15 +1,7 @@
-# Python
 __pycache__/
 *.pyc
-
-# Virtual environment
 .venv/
-
-# Environment variables
 .env
-
-# VS Code
 .vscode/
-
-# macOS
 .DS_Store
+.visual_frames/

@@ -1,43 +1,106 @@
-# relevance_filter.py
 from sentence_transformers import SentenceTransformer, util
 
 _model = None
 
+
 def get_embedder():
     global _model
+
     if _model is None:
-        # Small, free, runs locally — no API cost, no rate limit
         _model = SentenceTransformer("all-MiniLM-L6-v2")
+
     return _model
 
 
-def filter_by_relevance(segments: list, brief: str, keep_ratio: float = 0.7) -> tuple[list, list]:
+def filter_by_relevance(
+    segments: list,
+    brief: str,
+    keep_ratio: float = 0.5,
+    neighbor_window: int = 1
+) -> tuple[list, list]:
+
     """
-    Ranks segments by embedding similarity to the brief and returns
-    (kept_segments, dropped_segments). Dropped segments never reach the LLM at all —
-    they're marked included=False immediately, saving tokens on every downstream pass.
+    Selects transcript segments relevant to the user's editing request.
+
+    IMPORTANT:
+    - Original transcript text is never modified.
+    - Timestamp information is preserved.
+    - Neighboring sentences are included to preserve context.
     """
+
     if len(segments) < 8:
-        # Too few segments for filtering to be worth the risk — always run the full pipeline
         return segments, []
 
     model = get_embedder()
-    brief_embedding = model.encode(brief, convert_to_tensor=True)
+
+    brief_embedding = model.encode(
+        brief,
+        convert_to_tensor=True
+    )
+
     texts = [s["text"] for s in segments]
-    segment_embeddings = model.encode(texts, convert_to_tensor=True)
 
-    similarities = util.cos_sim(brief_embedding, segment_embeddings)[0]
+    segment_embeddings = model.encode(
+        texts,
+        convert_to_tensor=True
+    )
 
-    scored = list(zip(segments, similarities.tolist()))
-    scored.sort(key=lambda x: x[1], reverse=True)
+    similarities = util.cos_sim(
+        brief_embedding,
+        segment_embeddings
+    )[0]
 
-    keep_count = max(8, int(len(segments) * keep_ratio))
-    kept = [s for s, _ in scored[:keep_count]]
-    dropped = [s for s, _ in scored[keep_count:]]
+    scored = list(
+        zip(
+            range(len(segments)),
+            segments,
+            similarities.tolist()
+        )
+    )
 
-    # Restore original chronological order for what's kept — ranking was only for selection,
-    # not for changing sequence
-    kept_ids = {s["id"] for s in kept}
-    kept_in_order = [s for s in segments if s["id"] in kept_ids]
+    scored.sort(
+        key=lambda x: x[2],
+        reverse=True
+    )
 
-    return kept_in_order, dropped
+    keep_count = max(
+        8,
+        int(len(segments) * keep_ratio)
+    )
+
+    selected_indices = set()
+
+    # Select the most relevant sentences
+    for index, segment, score in scored[:keep_count]:
+
+        selected_indices.add(index)
+
+        # Add nearby sentences for continuity
+        for offset in range(
+            -neighbor_window,
+            neighbor_window + 1
+        ):
+
+            neighbor_index = index + offset
+
+            if 0 <= neighbor_index < len(segments):
+                selected_indices.add(neighbor_index)
+
+    # Restore chronological order
+    kept = [
+        segments[i]
+        for i in sorted(selected_indices)
+    ]
+
+    kept_ids = {
+        s["id"]
+        for s in kept
+    }
+
+    dropped = [
+        s
+        for s in segments
+        if s["id"] not in kept_ids
+    ]
+
+    return kept, dropped

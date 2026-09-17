@@ -846,7 +846,7 @@
           "end": 67.19
         }
       ],
-      "text_compressed": "Random side note, I had coffee this morning and it was way too strong."
+      "text_compressed": "I had coffee this morning and it was way too strong."
     },
     {
       "id": "seg-0007",
@@ -1305,7 +1305,7 @@
           "end": 102.8
         }
       ],
-      "text_compressed": "And the last piece, the one I'm most excited about, is that the system can splice the footage back together automatically using FMPEG."
+      "text_compressed": "The last piece, the one I'm most excited about, is that the system can actually splice the footage back together automatically using FMPEG."
     },
     {
       "id": "seg-0011",
@@ -1705,8 +1705,7 @@
           "start": 129.78,
           "end": 130.08
         }
-      ],
-      "text_compressed": "Thanks for watching."
+      ]
     },
     {
       "id": "seg-0017",
@@ -1721,8 +1720,19 @@
           "start": 130.4,
           "end": 130.6
         }
-      ],
-      "text_compressed": "Bye."
+      ]
     }
-  ]
+  ],
+  "editing_metadata": {
+    "brief": "start with the most exciting part - the part about splicing the footage back together with ffmpeg - then explain transcription, then explain segment selection last",
+    "visual_context_used": false,
+    "relevant_visual_shots": 0,
+    "num_votes": 3,
+    "majority_threshold": 2,
+    "selected_beats": [
+      "beat-005",
+      "beat-001",
+      "beat-004"
+    ]
+  }
 }
