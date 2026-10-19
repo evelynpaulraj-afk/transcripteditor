@@ -250,7 +250,7 @@ def compress_segments_with_llm(segments: list) -> None:
     compressed_input_size = estimate_tokens(
         compact_json(original_payload)
     )
-
+    
     result = call_model(prompt)
 
     by_id = {
@@ -321,21 +321,70 @@ def compress_segments_with_llm(segments: list) -> None:
     compressed_size = estimate_tokens(
         compact_json(compressed_payload)
     )
+    # --------------------------------------------------------
+    # Compression Metrics
+    # --------------------------------------------------------
 
-    saved_pct = (
-        100
-        * (compressed_input_size - compressed_size)
-        / compressed_input_size
-        if compressed_input_size
-        else 0
+    tokens_saved = compressed_input_size - compressed_size
+
+    compression_ratio = (
+        compressed_input_size / compressed_size
+        if compressed_size else 0
     )
 
+    compression_percent = (
+        tokens_saved / compressed_input_size * 100
+        if compressed_input_size else 0
+    )
+
+    avg_before = (
+        compressed_input_size / len(to_compress)
+        if to_compress else 0
+    )
+
+    avg_after = (
+        compressed_size / len(to_compress)
+        if to_compress else 0
+    )
+
+    print("\n========== Prompt Compression Metrics ==========")
+    print(f"Original tokens           : {compressed_input_size}")
+    print(f"Compressed tokens         : {compressed_size}")
+    print(f"Tokens saved              : {tokens_saved}")
+    print(f"Compression ratio         : {compression_ratio:.2f}")
+    print(f"Compression reduction (%) : {compression_percent:.2f}%")
+    print(f"Average tokens/segment before : {avg_before:.2f}")
+    print(f"Average tokens/segment after  : {avg_after:.2f}")
+
+    print("\nSentence-level Compression")
+    print("-" * 60)
+
+    for s in to_compress:
+
+        before = estimate_tokens(s["text"])
+
+        after = estimate_tokens(
+            s["text_compressed"]
+        )
+
+        reduction = (
+            (before - after) / before * 100
+            if before else 0
+        )
+
+        print(
+            f'{s["id"]:>10} | '
+            f'{before:3d} -> {after:3d} tokens | '
+            f'{reduction:5.1f}%'
+        )
+
+    print("=" * 60)
+    
     print(
-        f"LLM compression: "
-        f"~{compressed_input_size} -> "
-        f"~{compressed_size} tokens "
-        f"({saved_pct:.0f}% reduction) "
-        f"across {len(to_compress)} sentences"
+        f"\nLLM compression summary:"
+        f"\n{compressed_input_size} -> {compressed_size} tokens"
+        f"\nReduction: {compression_percent:.2f}%"
+        f"\nProcessed sentences: {len(to_compress)}"
     )
 
     if warnings:
