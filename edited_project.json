@@ -3861,7 +3861,7 @@
   "editing_metadata": {
     "brief": "Keep the important explanations and product demonstrations",
     "visual_context_used": true,
-    "relevant_visual_shots": 24,
+    "relevant_visual_shots": 5,
     "num_votes": 1,
     "majority_threshold": 1,
     "selected_beats": [

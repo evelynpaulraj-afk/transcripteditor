@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 from relevance_filter import filter_by_relevance
-
+from graph_compression import compress_visual_graph
 
 # ============================================================
 # CONFIGURATION
@@ -1162,18 +1162,43 @@ def select_segments(
 
     if visual_context:
 
-        relevant_visual = (
-            find_visual_context_for_segments(
-                segments,
-                visual_context
-            )
+        relevant_visual = find_visual_context_for_segments(
+            segments,
+            visual_context
         )
 
         print(
-            f"Visual context: "
-            f"{len(relevant_visual)} "
-            f"relevant shots matched "
-            f"to transcript."
+            f"Visual context before graph compression: "
+            f"{len(relevant_visual)} shots"
+        )
+
+        relevant_visual = compress_visual_graph(
+            relevant_visual,
+            keep_ratio=0.5
+        )
+
+        original_visual = len(find_visual_context_for_segments(
+            segments,
+            visual_context
+        ))
+
+        compressed_visual = len(relevant_visual)
+
+        saved = original_visual - compressed_visual
+
+        ratio = compressed_visual / original_visual if original_visual else 0
+
+        print("\n========== Graph Compression Metrics ==========")
+        print(f"Original visual nodes : {original_visual}")
+        print(f"Compressed nodes      : {compressed_visual}")
+        print(f"Nodes removed         : {saved}")
+        print(f"Compression ratio     : {ratio:.2f}")
+        print(f"Reduction (%)         : {(saved/original_visual*100):.2f}%")
+        print("===============================================\n")
+
+        print(
+            f"Visual context after graph compression: "
+            f"{len(relevant_visual)} shots"
         )
 
     else:

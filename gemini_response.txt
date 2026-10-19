@@ -2,27 +2,27 @@
     "final_sequence": [
         {
             "beat_id": "beat-006",
-            "reason": "Introduces the Walmart Bridgerton outfit package and product demonstration"
+            "reason": "introduces the Walmart Bridgerton-inspired outfit package and video product demonstration"
         },
         {
             "beat_id": "beat-007",
-            "reason": "Shows and demonstrates the adorable Walmart Bridgerton set"
+            "reason": "shows the speaker unpacking and displaying the Walmart Bridgerton clothing set"
         },
         {
             "beat_id": "beat-008",
-            "reason": "Explains why Walmart has amazing Bridgerton items"
+            "reason": "highlights Walmart's Bridgerton collection and positive product feedback"
         },
         {
             "beat_id": "beat-009",
-            "reason": "Demonstrates and highlights the cute top from Walmart"
+            "reason": "displays the cute top from the Walmart clothing haul"
         },
         {
             "beat_id": "beat-010",
-            "reason": "Demonstrates the matching gorgeous maxi skirt"
+            "reason": "presents the gorgeous maxi skirt from the Walmart haul for the outfit demonstration"
         },
         {
             "beat_id": "beat-012",
-            "reason": "Concludes the product demonstration and thanks Walmart"
+            "reason": "features the sponsored Walmart outfit demonstration and final look"
         }
     ]
 }

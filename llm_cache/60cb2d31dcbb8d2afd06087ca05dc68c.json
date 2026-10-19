@@ -1,0 +1,28 @@
+{
+  "final_sequence": [
+    {
+      "beat_id": "beat-006",
+      "reason": "introduces the sponsored Walmart product haul"
+    },
+    {
+      "beat_id": "beat-007",
+      "reason": "demonstrates the Bridgerton inspired clothing set"
+    },
+    {
+      "beat_id": "beat-008",
+      "reason": "discusses the Walmart product collection"
+    },
+    {
+      "beat_id": "beat-009",
+      "reason": "shows details of the clothing top"
+    },
+    {
+      "beat_id": "beat-010",
+      "reason": "demonstrates the matching skirt product"
+    },
+    {
+      "beat_id": "beat-012",
+      "reason": "acknowledges Walmart sponsorship and final product showcase"
+    }
+  ]
+}
