@@ -1,0 +1,16 @@
+{
+  "final_sequence": [
+    {
+      "beat_id": "beat-001",
+      "reason": "explains the transcription process and technical workflow"
+    },
+    {
+      "beat_id": "beat-004",
+      "reason": "explains segment selection and automated editing"
+    },
+    {
+      "beat_id": "beat-005",
+      "reason": "demonstrates automated video splicing using ffmpeg"
+    }
+  ]
+}

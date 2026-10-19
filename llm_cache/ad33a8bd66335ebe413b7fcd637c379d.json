@@ -1,0 +1,16 @@
+{
+  "final_sequence": [
+    {
+      "beat_id": "beat-001",
+      "reason": "Explains the transcription step clearly."
+    },
+    {
+      "beat_id": "beat-004",
+      "reason": "Explains segment selection and LLM process."
+    },
+    {
+      "beat_id": "beat-005",
+      "reason": "Demonstrates automatic video splicing product feature."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "compressed": [
+    {
+      "id": "seg-0000",
+      "text": "Hi."
+    },
+    {
+      "id": "seg-0001",
+      "text": "This is a test recording."
+    },
+    {
+      "id": "seg-0002",
+      "text": "I'm just gonna talk for a few minutes about a few different topics so that I have something to test my video editor on."
+    },
+    {
+      "id": "seg-0003",
+      "text": "The first thing I want to talk about is how the transcription step works."
+    },
+    {
+      "id": "seg-0004",
+      "text": "Basically, the system takes a raw video file, runs it through a speech-to-text model called Whisper, and gets back a time-stamped transcript so every sentence has an exact start and end time in the original video."
+    },
+    {
+      "id": "seg-0005",
+      "text": "The way it works is you take the video and it listens to it and figures out what words are being said and it knows what time each word happens."
+    },
+    {
+      "id": "seg-0006",
+      "text": "Actually, random side note, I had coffee this morning and it was way too strong."
+    },
+    {
+      "id": "seg-0008",
+      "text": "Anyway, the second part is a segment selection, and LLM reads through all of the transcript segments along with a brief, only keep the technical parts, and decides which ones to keep and which to cut."
+    },
+    {
+      "id": "seg-0009",
+      "text": "Kind of like how a human editor would skim through and mark things up."
+    },
+    {
+      "id": "seg-0010",
+      "text": "And the last piece, the one I'm most excited about, is that the system can actually splice the footage back together automatically using FMPEG."
+    },
+    {
+      "id": "seg-0011",
+      "text": "So you end up with a fully edited video without ever opening a timeline editor by hand."
+    },
+    {
+      "id": "seg-0013",
+      "text": "That's basically it."
+    },
+    {
+      "id": "seg-0014",
+      "text": "That's the three parts, transcription, and then the selection thing, and then the last one with the video stuff."
+    },
+    {
+      "id": "seg-0015",
+      "text": "I think that's everything I wanted to cover."
+    },
+    {
+      "id": "seg-0016",
+      "text": "Thanks for watching."
+    }
+  ]
+}

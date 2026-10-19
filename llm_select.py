@@ -3,6 +3,7 @@
 import json
 import sys
 import os
+import hashlib
 from collections import Counter
 
 from dotenv import load_dotenv
@@ -22,11 +23,11 @@ client = OpenAI(
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
 )
 
-MODEL = "gemini-3.6-flash"
+MODEL = "gemini-3.5-flash-lite"
 
 # Self-consistency:
 # Run the final selection multiple times and keep majority-approved beats.
-NUM_VOTES = 3
+NUM_VOTES = 1
 
 
 # ============================================================
@@ -44,30 +45,6 @@ def save_project(project, path):
 
 
 def load_visual_context(path):
-    """
-    Loads precomputed visual context.
-
-    Expected structure:
-
-    {
-        "shots": [
-            {
-                "shot_id": "shot-001",
-                "start": 0.0,
-                "end": 5.4,
-                "visual": {
-                    "people": ["speaker"],
-                    "actions": ["speaking"],
-                    "objects": ["laptop"],
-                    "visual_content": ["graph"],
-                    "camera_framing": "medium shot",
-                    "editing_relevance": "..."
-                }
-            }
-        ]
-    }
-    """
-
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -77,34 +54,39 @@ def load_visual_context(path):
 # ============================================================
 
 def extract_json(raw_text: str) -> dict:
-    """
-    Safely extracts a JSON object from model output.
-    Handles occasional markdown code fences.
-    """
-
     text = raw_text.strip()
 
     if text.startswith("```"):
-        parts = text.split("```")
-
-        if len(parts) >= 2:
-            text = parts[1]
-
-            if text.lstrip().startswith("json"):
-                text = text.lstrip()[4:]
+        text = text.replace("```json", "").replace("```", "").strip()
 
     start = text.find("{")
     end = text.rfind("}")
 
     if start == -1 or end == -1:
-        raise ValueError(
-            f"Could not find JSON object in model response:\n{text}"
-        )
+        raise ValueError(f"No JSON found:\n{text}")
 
-    return json.loads(text[start:end + 1])
+    text = text[start:end + 1]
+
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        print("\n----- Invalid JSON returned by Gemini -----")
+        print(text)
+        print("------------------------------------------")
+        raise
 
 
-def call_model(prompt: str) -> dict:
+CACHE_DIR = "llm_cache"
+os.makedirs(CACHE_DIR, exist_ok=True)
+
+def call_model(prompt):
+
+    key = hashlib.md5(prompt.encode()).hexdigest()
+    cache_file = os.path.join(CACHE_DIR, key + ".json")
+
+    if os.path.exists(cache_file):
+        with open(cache_file, "r", encoding="utf-8") as f:
+            return json.load(f)
 
     response = client.chat.completions.create(
         model=MODEL,
@@ -114,15 +96,26 @@ def call_model(prompt: str) -> dict:
                 "content": prompt
             }
         ],
-        response_format={
-            "type": "json_object"
-        },
-        temperature=0.2,
+        response_format={"type":"json_object"},
+        temperature=0,
+        max_tokens=8192,
     )
 
-    return extract_json(
-        response.choices[0].message.content
-    )
+    raw = response.choices[0].message.content
+
+    with open("gemini_response.txt", "w", encoding="utf-8") as f:
+        f.write(raw)
+
+    print("\n========== RAW GEMINI RESPONSE ==========")
+    print(raw)
+    print("=========================================\n")
+
+    result = extract_json(raw)
+
+    with open(cache_file, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2)
+
+    return result
 
 
 def estimate_tokens(text: str) -> int:
@@ -204,15 +197,13 @@ Output:
 "The way it works is you take the video and it listens to it and figures out
 what words are being said."
 
+Return valid JSON only.
+Do not include explanations, markdown, comments, or trailing commas.
+
 Respond with ONLY:
 
 {{
-    "compressed": [
-        {{
-            "id": "seg-0000",
-            "text": "..."
-        }}
-    ]
+    "compressed": [{{"id": "seg-0000","text": "..."}}]
 }}
 
 SENTENCES:
@@ -438,25 +429,8 @@ def find_visual_context_for_segments(
     segments,
     visual_data
 ):
-    """
-    Finds visual shots overlapping the selected
-    transcript segments.
 
-    This is timestamp alignment.
-
-    Transcript:
-        42.1 - 46.2
-
-    Shot:
-        42.0 - 51.2
-
-    => related.
-    """
-
-    shots = visual_data.get(
-        "shots",
-        []
-    )
+    shots = visual_data
 
     relevant_shots = []
 
@@ -508,7 +482,7 @@ def format_visual_context(
     for shot in visual_shots:
 
         visual = shot.get(
-            "visual",
+            "analysis",
             {}
         )
 
@@ -1169,9 +1143,11 @@ def select_segments(
         for s in segments
     }
 
-    compress_segments_with_llm(
-        segments
-    )
+    BATCH_SIZE = 20
+
+    for i in range(0, len(segments), BATCH_SIZE):
+        batch = segments[i:i+BATCH_SIZE]
+        compress_segments_with_llm(batch)
 
     debug_compression_sample(
         segments

@@ -1,893 +1,708 @@
 {
-  "video_path": "my_test.mp4",
+  "video_path": "dailyvlog.mp4",
   "segments": [
     {
       "id": "seg-0000",
       "order": 0,
-      "included": false,
-      "start": 0.69,
-      "end": 3.69,
-      "text": "Okay, so, um, hi.",
+      "included": true,
+      "start": 0.0,
+      "end": 5.16,
+      "text": "Good morning, you guys my name is Caitlin Johnson and welcome back to my channel today",
       "words": [
         {
-          "word": " Okay,",
-          "start": 0.69,
-          "end": 1.47
+          "word": " Good",
+          "start": 0.0,
+          "end": 0.68
         },
         {
-          "word": " so,",
-          "start": 1.77,
-          "end": 2.47
+          "word": " morning,",
+          "start": 0.68,
+          "end": 0.9
         },
         {
-          "word": " um,",
-          "start": 2.47,
-          "end": 3.13
+          "word": " you",
+          "start": 0.9,
+          "end": 1.16
         },
         {
-          "word": " hi.",
-          "start": 3.35,
-          "end": 3.69
+          "word": " guys",
+          "start": 1.16,
+          "end": 1.38
+        },
+        {
+          "word": " my",
+          "start": 1.38,
+          "end": 1.6
+        },
+        {
+          "word": " name",
+          "start": 1.6,
+          "end": 1.76
+        },
+        {
+          "word": " is",
+          "start": 1.76,
+          "end": 1.94
+        },
+        {
+          "word": " Caitlin",
+          "start": 1.94,
+          "end": 2.24
+        },
+        {
+          "word": " Johnson",
+          "start": 2.24,
+          "end": 2.72
+        },
+        {
+          "word": " and",
+          "start": 2.72,
+          "end": 3.0
+        },
+        {
+          "word": " welcome",
+          "start": 3.0,
+          "end": 3.26
+        },
+        {
+          "word": " back",
+          "start": 3.26,
+          "end": 3.52
+        },
+        {
+          "word": " to",
+          "start": 3.52,
+          "end": 3.8
+        },
+        {
+          "word": " my",
+          "start": 3.8,
+          "end": 4.04
+        },
+        {
+          "word": " channel",
+          "start": 4.04,
+          "end": 4.52
+        },
+        {
+          "word": " today",
+          "start": 4.52,
+          "end": 5.16
         }
       ]
     },
     {
       "id": "seg-0001",
       "order": 1,
-      "included": false,
-      "start": 4.15,
-      "end": 5.65,
-      "text": "This is a test recording.",
+      "included": true,
+      "start": 5.16,
+      "end": 8.1,
+      "text": "I am doing a unedited vlog",
       "words": [
         {
-          "word": " This",
-          "start": 4.15,
-          "end": 4.35
+          "word": " I",
+          "start": 5.16,
+          "end": 5.52
         },
         {
-          "word": " is",
-          "start": 4.35,
-          "end": 4.65
+          "word": " am",
+          "start": 5.52,
+          "end": 5.94
+        },
+        {
+          "word": " doing",
+          "start": 5.94,
+          "end": 6.34
         },
         {
           "word": " a",
-          "start": 4.65,
-          "end": 4.85
+          "start": 6.34,
+          "end": 7.02
         },
         {
-          "word": " test",
-          "start": 4.85,
-          "end": 5.13
+          "word": " unedited",
+          "start": 7.02,
+          "end": 7.74
         },
         {
-          "word": " recording.",
-          "start": 5.13,
-          "end": 5.65
+          "word": " vlog",
+          "start": 7.74,
+          "end": 8.1
         }
       ]
     },
     {
       "id": "seg-0002",
       "order": 2,
-      "included": false,
-      "start": 8.09,
-      "end": 18.75,
-      "text": "I'm just gonna talk for a few minutes about a few different topics so that, um, so that I have something to test my video editor on.",
+      "included": true,
+      "start": 8.1,
+      "end": 13.08,
+      "text": "I feel like y'all love this last time and I think they're so fun because I can like I",
       "words": [
         {
-          "word": " I'm",
-          "start": 8.09,
-          "end": 8.47
+          "word": " I",
+          "start": 8.1,
+          "end": 8.34
         },
         {
-          "word": " just",
-          "start": 8.47,
-          "end": 8.67
+          "word": " feel",
+          "start": 8.34,
+          "end": 8.5
         },
         {
-          "word": " gonna",
-          "start": 8.67,
-          "end": 9.53
+          "word": " like",
+          "start": 8.5,
+          "end": 8.72
         },
         {
-          "word": " talk",
-          "start": 9.53,
-          "end": 10.29
+          "word": " y",
+          "start": 8.72,
+          "end": 8.8
         },
         {
-          "word": " for",
-          "start": 10.29,
-          "end": 10.53
+          "word": "'all",
+          "start": 8.8,
+          "end": 8.92
         },
         {
-          "word": " a",
-          "start": 10.53,
-          "end": 10.69
+          "word": " love",
+          "start": 8.92,
+          "end": 9.1
         },
         {
-          "word": " few",
-          "start": 10.69,
-          "end": 10.79
+          "word": " this",
+          "start": 9.1,
+          "end": 9.38
         },
         {
-          "word": " minutes",
-          "start": 10.79,
-          "end": 11.19
+          "word": " last",
+          "start": 9.38,
+          "end": 9.72
         },
         {
-          "word": " about",
-          "start": 11.19,
-          "end": 11.67
+          "word": " time",
+          "start": 9.72,
+          "end": 9.94
         },
         {
-          "word": " a",
-          "start": 11.67,
-          "end": 11.89
-        },
-        {
-          "word": " few",
-          "start": 11.89,
-          "end": 12.05
-        },
-        {
-          "word": " different",
-          "start": 12.05,
-          "end": 12.33
-        },
-        {
-          "word": " topics",
-          "start": 12.33,
-          "end": 13.01
-        },
-        {
-          "word": " so",
-          "start": 13.01,
-          "end": 13.41
-        },
-        {
-          "word": " that,",
-          "start": 13.41,
-          "end": 14.07
-        },
-        {
-          "word": " um,",
-          "start": 14.13,
-          "end": 15.01
-        },
-        {
-          "word": " so",
-          "start": 15.51,
-          "end": 15.65
-        },
-        {
-          "word": " that",
-          "start": 15.65,
-          "end": 16.09
+          "word": " and",
+          "start": 9.94,
+          "end": 10.36
         },
         {
           "word": " I",
-          "start": 16.09,
-          "end": 16.33
+          "start": 10.36,
+          "end": 10.42
         },
         {
-          "word": " have",
-          "start": 16.33,
-          "end": 16.47
+          "word": " think",
+          "start": 10.42,
+          "end": 10.54
         },
         {
-          "word": " something",
-          "start": 16.47,
-          "end": 16.79
+          "word": " they're",
+          "start": 10.54,
+          "end": 10.8
         },
         {
-          "word": " to",
-          "start": 16.79,
-          "end": 17.21
+          "word": " so",
+          "start": 10.8,
+          "end": 11.06
         },
         {
-          "word": " test",
-          "start": 17.21,
-          "end": 17.47
+          "word": " fun",
+          "start": 11.06,
+          "end": 11.22
         },
         {
-          "word": " my",
-          "start": 17.47,
-          "end": 17.77
+          "word": " because",
+          "start": 11.22,
+          "end": 11.54
         },
         {
-          "word": " video",
-          "start": 17.77,
-          "end": 18.09
+          "word": " I",
+          "start": 11.54,
+          "end": 11.74
         },
         {
-          "word": " editor",
-          "start": 18.09,
-          "end": 18.39
+          "word": " can",
+          "start": 11.74,
+          "end": 11.86
         },
         {
-          "word": " on.",
-          "start": 18.39,
-          "end": 18.75
+          "word": " like",
+          "start": 11.86,
+          "end": 12.42
+        },
+        {
+          "word": " I",
+          "start": 12.42,
+          "end": 13.08
         }
       ]
     },
     {
       "id": "seg-0003",
-      "order": 4,
-      "included": false,
-      "start": 23.29,
-      "end": 27.55,
-      "text": "Okay, so the first thing I want to talk about is how the transcription step works.",
+      "order": 3,
+      "included": true,
+      "start": 13.08,
+      "end": 16.72,
+      "text": "Don't know. I feel like I get really close to you guys and it feels like a FaceTime call",
       "words": [
         {
-          "word": " Okay,",
-          "start": 23.29,
-          "end": 23.67
+          "word": " Don't",
+          "start": 13.08,
+          "end": 13.18
         },
         {
-          "word": " so",
-          "start": 24.05,
-          "end": 24.23
-        },
-        {
-          "word": " the",
-          "start": 24.23,
-          "end": 24.35
-        },
-        {
-          "word": " first",
-          "start": 24.35,
-          "end": 24.55
-        },
-        {
-          "word": " thing",
-          "start": 24.55,
-          "end": 24.71
+          "word": " know.",
+          "start": 13.18,
+          "end": 13.3
         },
         {
           "word": " I",
-          "start": 24.71,
-          "end": 24.77
+          "start": 13.3,
+          "end": 13.44
         },
         {
-          "word": " want",
-          "start": 24.77,
-          "end": 24.93
+          "word": " feel",
+          "start": 13.44,
+          "end": 13.58
+        },
+        {
+          "word": " like",
+          "start": 13.58,
+          "end": 13.68
+        },
+        {
+          "word": " I",
+          "start": 13.68,
+          "end": 13.84
+        },
+        {
+          "word": " get",
+          "start": 13.84,
+          "end": 13.96
+        },
+        {
+          "word": " really",
+          "start": 13.96,
+          "end": 14.32
+        },
+        {
+          "word": " close",
+          "start": 14.32,
+          "end": 14.68
         },
         {
           "word": " to",
-          "start": 24.93,
-          "end": 25.09
+          "start": 14.68,
+          "end": 14.86
         },
         {
-          "word": " talk",
-          "start": 25.09,
-          "end": 25.23
+          "word": " you",
+          "start": 14.86,
+          "end": 15.0
         },
         {
-          "word": " about",
-          "start": 25.23,
-          "end": 25.41
+          "word": " guys",
+          "start": 15.0,
+          "end": 15.18
         },
         {
-          "word": " is",
-          "start": 25.41,
-          "end": 25.57
+          "word": " and",
+          "start": 15.18,
+          "end": 15.28
         },
         {
-          "word": " how",
-          "start": 25.57,
-          "end": 25.77
+          "word": " it",
+          "start": 15.28,
+          "end": 15.4
         },
         {
-          "word": " the",
-          "start": 25.77,
-          "end": 26.03
+          "word": " feels",
+          "start": 15.4,
+          "end": 15.56
         },
         {
-          "word": " transcription",
-          "start": 26.03,
-          "end": 26.77
+          "word": " like",
+          "start": 15.56,
+          "end": 15.72
         },
         {
-          "word": " step",
-          "start": 26.77,
-          "end": 27.07
+          "word": " a",
+          "start": 15.72,
+          "end": 15.96
         },
         {
-          "word": " works.",
-          "start": 27.07,
-          "end": 27.55
+          "word": " FaceTime",
+          "start": 15.96,
+          "end": 16.38
+        },
+        {
+          "word": " call",
+          "start": 16.38,
+          "end": 16.72
         }
       ]
     },
     {
       "id": "seg-0004",
-      "order": 3,
-      "included": false,
-      "start": 27.89,
-      "end": 40.55,
-      "text": "Basically, the system takes a raw video file, runs it through a speech-to-text model called Whisper, and gets back a time-stamped transcript so every sentence has an exact start and end time in the original video.",
+      "order": 4,
+      "included": true,
+      "start": 16.72,
+      "end": 23.52,
+      "text": "But right now I am getting ready to go over to my grandparents for breakfast and I'm really excited to see them",
       "words": [
         {
-          "word": " Basically,",
-          "start": 27.89,
-          "end": 28.37
+          "word": " But",
+          "start": 16.72,
+          "end": 17.42
         },
         {
-          "word": " the",
-          "start": 28.43,
-          "end": 28.57
+          "word": " right",
+          "start": 17.42,
+          "end": 17.7
         },
         {
-          "word": " system",
-          "start": 28.57,
-          "end": 28.91
+          "word": " now",
+          "start": 17.7,
+          "end": 18.04
         },
         {
-          "word": " takes",
-          "start": 28.91,
-          "end": 29.19
+          "word": " I",
+          "start": 18.04,
+          "end": 18.14
         },
         {
-          "word": " a",
-          "start": 29.19,
-          "end": 29.43
+          "word": " am",
+          "start": 18.14,
+          "end": 18.34
         },
         {
-          "word": " raw",
-          "start": 29.43,
-          "end": 29.63
+          "word": " getting",
+          "start": 18.34,
+          "end": 18.56
         },
         {
-          "word": " video",
-          "start": 29.63,
-          "end": 30.05
+          "word": " ready",
+          "start": 18.56,
+          "end": 18.8
         },
         {
-          "word": " file,",
-          "start": 30.05,
-          "end": 30.41
+          "word": " to",
+          "start": 18.8,
+          "end": 18.98
         },
         {
-          "word": " runs",
-          "start": 30.69,
-          "end": 30.85
+          "word": " go",
+          "start": 18.98,
+          "end": 19.2
         },
         {
-          "word": " it",
-          "start": 30.85,
-          "end": 31.07
+          "word": " over",
+          "start": 19.2,
+          "end": 19.54
         },
         {
-          "word": " through",
-          "start": 31.07,
-          "end": 31.31
+          "word": " to",
+          "start": 19.54,
+          "end": 19.82
         },
         {
-          "word": " a",
-          "start": 31.31,
-          "end": 31.49
+          "word": " my",
+          "start": 19.82,
+          "end": 20.22
         },
         {
-          "word": " speech",
-          "start": 31.49,
-          "end": 31.75
+          "word": " grandparents",
+          "start": 20.22,
+          "end": 20.64
         },
         {
-          "word": "-to",
-          "start": 31.75,
-          "end": 31.91
+          "word": " for",
+          "start": 20.64,
+          "end": 21.02
         },
         {
-          "word": "-text",
-          "start": 31.91,
-          "end": 32.07
-        },
-        {
-          "word": " model",
-          "start": 32.07,
-          "end": 32.43
-        },
-        {
-          "word": " called",
-          "start": 32.43,
-          "end": 32.83
-        },
-        {
-          "word": " Whisper,",
-          "start": 32.83,
-          "end": 33.41
+          "word": " breakfast",
+          "start": 21.02,
+          "end": 21.62
         },
         {
           "word": " and",
-          "start": 33.77,
-          "end": 33.83
+          "start": 21.62,
+          "end": 22.34
         },
         {
-          "word": " gets",
-          "start": 33.83,
-          "end": 34.11
+          "word": " I'm",
+          "start": 22.34,
+          "end": 22.52
         },
         {
-          "word": " back",
-          "start": 34.11,
-          "end": 34.45
+          "word": " really",
+          "start": 22.52,
+          "end": 22.74
         },
         {
-          "word": " a",
-          "start": 34.45,
-          "end": 34.85
+          "word": " excited",
+          "start": 22.74,
+          "end": 22.98
         },
         {
-          "word": " time",
-          "start": 34.85,
-          "end": 35.17
+          "word": " to",
+          "start": 22.98,
+          "end": 23.16
         },
         {
-          "word": "-stamped",
-          "start": 35.17,
-          "end": 35.45
+          "word": " see",
+          "start": 23.16,
+          "end": 23.34
         },
         {
-          "word": " transcript",
-          "start": 35.45,
-          "end": 36.15
-        },
-        {
-          "word": " so",
-          "start": 36.15,
-          "end": 36.65
-        },
-        {
-          "word": " every",
-          "start": 36.65,
-          "end": 36.99
-        },
-        {
-          "word": " sentence",
-          "start": 36.99,
-          "end": 37.41
-        },
-        {
-          "word": " has",
-          "start": 37.41,
-          "end": 37.69
-        },
-        {
-          "word": " an",
-          "start": 37.69,
-          "end": 37.83
-        },
-        {
-          "word": " exact",
-          "start": 37.83,
-          "end": 38.27
-        },
-        {
-          "word": " start",
-          "start": 38.27,
-          "end": 38.59
-        },
-        {
-          "word": " and",
-          "start": 38.59,
-          "end": 38.89
-        },
-        {
-          "word": " end",
-          "start": 38.89,
-          "end": 39.13
-        },
-        {
-          "word": " time",
-          "start": 39.13,
-          "end": 39.35
-        },
-        {
-          "word": " in",
-          "start": 39.35,
-          "end": 39.45
-        },
-        {
-          "word": " the",
-          "start": 39.45,
-          "end": 39.59
-        },
-        {
-          "word": " original",
-          "start": 39.59,
-          "end": 39.97
-        },
-        {
-          "word": " video.",
-          "start": 39.97,
-          "end": 40.55
+          "word": " them",
+          "start": 23.34,
+          "end": 23.52
         }
       ]
     },
     {
       "id": "seg-0005",
       "order": 5,
-      "included": false,
-      "start": 41.83,
-      "end": 60.01,
-      "text": "Um, yeah, so like, the way it works is you basically, you take the video, right, and it, uh, it listens to it and it kind of, like, figures out what words are being said, you know, and it, um, it knows what time each word happens.",
+      "included": true,
+      "start": 23.52,
+      "end": 25.04,
+      "text": "I got a spray tan last night",
       "words": [
         {
-          "word": " Um,",
-          "start": 41.83,
-          "end": 41.83
+          "word": " I",
+          "start": 23.52,
+          "end": 23.6
         },
         {
-          "word": " yeah,",
-          "start": 42.49,
-          "end": 42.67
+          "word": " got",
+          "start": 23.6,
+          "end": 23.76
         },
         {
-          "word": " so",
-          "start": 42.85,
-          "end": 42.95
+          "word": " a",
+          "start": 23.76,
+          "end": 24.02
         },
         {
-          "word": " like,",
-          "start": 42.95,
-          "end": 43.37
+          "word": " spray",
+          "start": 24.02,
+          "end": 24.24
         },
         {
-          "word": " the",
-          "start": 43.55,
-          "end": 43.65
+          "word": " tan",
+          "start": 24.24,
+          "end": 24.38
         },
         {
-          "word": " way",
-          "start": 43.65,
-          "end": 43.89
+          "word": " last",
+          "start": 24.38,
+          "end": 24.7
         },
         {
-          "word": " it",
-          "start": 43.89,
-          "end": 43.89
-        },
-        {
-          "word": " works",
-          "start": 43.89,
-          "end": 44.21
-        },
-        {
-          "word": " is",
-          "start": 44.21,
-          "end": 44.57
-        },
-        {
-          "word": " you",
-          "start": 44.57,
-          "end": 45.17
-        },
-        {
-          "word": " basically,",
-          "start": 45.17,
-          "end": 45.83
-        },
-        {
-          "word": " you",
-          "start": 46.05,
-          "end": 46.39
-        },
-        {
-          "word": " take",
-          "start": 46.39,
-          "end": 46.61
-        },
-        {
-          "word": " the",
-          "start": 46.61,
-          "end": 46.77
-        },
-        {
-          "word": " video,",
-          "start": 46.77,
-          "end": 47.05
-        },
-        {
-          "word": " right,",
-          "start": 47.27,
-          "end": 47.57
-        },
-        {
-          "word": " and",
-          "start": 47.87,
-          "end": 48.11
-        },
-        {
-          "word": " it,",
-          "start": 48.11,
-          "end": 48.37
-        },
-        {
-          "word": " uh,",
-          "start": 48.37,
-          "end": 49.09
-        },
-        {
-          "word": " it",
-          "start": 49.09,
-          "end": 49.25
-        },
-        {
-          "word": " listens",
-          "start": 49.25,
-          "end": 49.59
-        },
-        {
-          "word": " to",
-          "start": 49.59,
-          "end": 49.85
-        },
-        {
-          "word": " it",
-          "start": 49.85,
-          "end": 50.05
-        },
-        {
-          "word": " and",
-          "start": 50.05,
-          "end": 50.21
-        },
-        {
-          "word": " it",
-          "start": 50.21,
-          "end": 50.49
-        },
-        {
-          "word": " kind",
-          "start": 50.49,
-          "end": 50.71
-        },
-        {
-          "word": " of,",
-          "start": 50.71,
-          "end": 51.23
-        },
-        {
-          "word": " like,",
-          "start": 51.23,
-          "end": 52.25
-        },
-        {
-          "word": " figures",
-          "start": 52.43,
-          "end": 52.75
-        },
-        {
-          "word": " out",
-          "start": 52.75,
-          "end": 53.43
-        },
-        {
-          "word": " what",
-          "start": 53.43,
-          "end": 53.69
-        },
-        {
-          "word": " words",
-          "start": 53.69,
-          "end": 53.93
-        },
-        {
-          "word": " are",
-          "start": 53.93,
-          "end": 54.15
-        },
-        {
-          "word": " being",
-          "start": 54.15,
-          "end": 54.49
-        },
-        {
-          "word": " said,",
-          "start": 54.49,
-          "end": 54.69
-        },
-        {
-          "word": " you",
-          "start": 54.69,
-          "end": 54.87
-        },
-        {
-          "word": " know,",
-          "start": 54.87,
-          "end": 55.31
-        },
-        {
-          "word": " and",
-          "start": 55.51,
-          "end": 55.83
-        },
-        {
-          "word": " it,",
-          "start": 55.83,
-          "end": 56.03
-        },
-        {
-          "word": " um,",
-          "start": 56.03,
-          "end": 56.69
-        },
-        {
-          "word": " it",
-          "start": 57.11,
-          "end": 57.39
-        },
-        {
-          "word": " knows",
-          "start": 57.39,
-          "end": 57.89
-        },
-        {
-          "word": " what",
-          "start": 57.89,
-          "end": 58.51
-        },
-        {
-          "word": " time",
-          "start": 58.51,
-          "end": 58.73
-        },
-        {
-          "word": " each",
-          "start": 58.73,
-          "end": 59.05
-        },
-        {
-          "word": " word",
-          "start": 59.05,
-          "end": 59.31
-        },
-        {
-          "word": " happens.",
-          "start": 59.31,
-          "end": 60.01
+          "word": " night",
+          "start": 24.7,
+          "end": 25.04
         }
       ]
     },
     {
       "id": "seg-0006",
       "order": 6,
-      "included": false,
-      "start": 62.39,
-      "end": 67.19,
-      "text": "Oh, actually, random side note, I had coffee this morning and it was way too strong.",
+      "included": true,
+      "start": 25.82,
+      "end": 30.78,
+      "text": "But instead of washing it off without in six hours, I accidentally fell asleep in it",
       "words": [
         {
-          "word": " Oh,",
-          "start": 62.39,
-          "end": 62.91
+          "word": " But",
+          "start": 25.82,
+          "end": 26.34
         },
         {
-          "word": " actually,",
-          "start": 63.45,
-          "end": 63.67
+          "word": " instead",
+          "start": 26.34,
+          "end": 26.86
         },
         {
-          "word": " random",
-          "start": 64.11,
-          "end": 64.19
+          "word": " of",
+          "start": 26.86,
+          "end": 26.96
         },
         {
-          "word": " side",
-          "start": 64.19,
-          "end": 64.47
-        },
-        {
-          "word": " note,",
-          "start": 64.47,
-          "end": 64.69
-        },
-        {
-          "word": " I",
-          "start": 64.99,
-          "end": 65.03
-        },
-        {
-          "word": " had",
-          "start": 65.03,
-          "end": 65.25
-        },
-        {
-          "word": " coffee",
-          "start": 65.25,
-          "end": 65.53
-        },
-        {
-          "word": " this",
-          "start": 65.53,
-          "end": 65.73
-        },
-        {
-          "word": " morning",
-          "start": 65.73,
-          "end": 65.95
-        },
-        {
-          "word": " and",
-          "start": 65.95,
-          "end": 66.05
+          "word": " washing",
+          "start": 26.96,
+          "end": 27.22
         },
         {
           "word": " it",
-          "start": 66.05,
-          "end": 66.15
+          "start": 27.22,
+          "end": 27.44
         },
         {
-          "word": " was",
-          "start": 66.15,
-          "end": 66.45
+          "word": " off",
+          "start": 27.44,
+          "end": 27.6
         },
         {
-          "word": " way",
-          "start": 66.45,
-          "end": 66.67
+          "word": " without",
+          "start": 27.6,
+          "end": 27.86
         },
         {
-          "word": " too",
-          "start": 66.67,
-          "end": 66.97
+          "word": " in",
+          "start": 27.86,
+          "end": 28.06
         },
         {
-          "word": " strong.",
-          "start": 66.97,
-          "end": 67.19
+          "word": " six",
+          "start": 28.06,
+          "end": 28.28
+        },
+        {
+          "word": " hours,",
+          "start": 28.28,
+          "end": 28.64
+        },
+        {
+          "word": " I",
+          "start": 28.94,
+          "end": 29.02
+        },
+        {
+          "word": " accidentally",
+          "start": 29.02,
+          "end": 29.56
+        },
+        {
+          "word": " fell",
+          "start": 29.56,
+          "end": 29.8
+        },
+        {
+          "word": " asleep",
+          "start": 29.8,
+          "end": 30.24
+        },
+        {
+          "word": " in",
+          "start": 30.24,
+          "end": 30.38
+        },
+        {
+          "word": " it",
+          "start": 30.38,
+          "end": 30.78
         }
       ]
     },
     {
       "id": "seg-0007",
       "order": 7,
-      "included": false,
-      "start": 67.63,
-      "end": 69.29,
-      "text": "I probably shouldn't have made it that dark.",
+      "included": true,
+      "start": 30.78,
+      "end": 36.58,
+      "text": "So I feel like yeah, I'm looking a little bit crazy, but hopefully I can figure that out later",
       "words": [
         {
+          "word": " So",
+          "start": 30.78,
+          "end": 31.08
+        },
+        {
           "word": " I",
-          "start": 67.63,
-          "end": 67.67
+          "start": 31.08,
+          "end": 31.28
         },
         {
-          "word": " probably",
-          "start": 67.67,
-          "end": 68.11
+          "word": " feel",
+          "start": 31.28,
+          "end": 31.54
         },
         {
-          "word": " shouldn't",
-          "start": 68.11,
-          "end": 68.31
+          "word": " like",
+          "start": 31.54,
+          "end": 32.14
         },
         {
-          "word": " have",
-          "start": 68.31,
-          "end": 68.51
+          "word": " yeah,",
+          "start": 32.14,
+          "end": 32.42
         },
         {
-          "word": " made",
-          "start": 68.51,
-          "end": 68.67
+          "word": " I'm",
+          "start": 32.42,
+          "end": 32.68
         },
         {
-          "word": " it",
-          "start": 68.67,
-          "end": 68.79
+          "word": " looking",
+          "start": 32.68,
+          "end": 32.88
+        },
+        {
+          "word": " a",
+          "start": 32.88,
+          "end": 33.06
+        },
+        {
+          "word": " little",
+          "start": 33.06,
+          "end": 33.24
+        },
+        {
+          "word": " bit",
+          "start": 33.24,
+          "end": 33.52
+        },
+        {
+          "word": " crazy,",
+          "start": 33.52,
+          "end": 33.88
+        },
+        {
+          "word": " but",
+          "start": 33.88,
+          "end": 34.14
+        },
+        {
+          "word": " hopefully",
+          "start": 34.14,
+          "end": 34.52
+        },
+        {
+          "word": " I",
+          "start": 34.52,
+          "end": 34.96
+        },
+        {
+          "word": " can",
+          "start": 34.96,
+          "end": 35.4
+        },
+        {
+          "word": " figure",
+          "start": 35.4,
+          "end": 35.72
         },
         {
           "word": " that",
-          "start": 68.79,
-          "end": 69.05
+          "start": 35.72,
+          "end": 35.96
         },
         {
-          "word": " dark.",
-          "start": 69.05,
-          "end": 69.29
+          "word": " out",
+          "start": 35.96,
+          "end": 36.14
+        },
+        {
+          "word": " later",
+          "start": 36.14,
+          "end": 36.58
         }
       ]
     },
@@ -895,194 +710,104 @@
       "id": "seg-0008",
       "order": 8,
       "included": true,
-      "start": 69.89,
-      "end": 82.75,
-      "text": "Anyway, the second part is a segment selection, and LLM reads through all of the transcript segments along with a brief, like, only keep the technical parts, and decides which ones to keep and which to cut.",
+      "start": 36.58,
+      "end": 42.98,
+      "text": "But today I am getting ready to go to Georgia tomorrow and drive nine hours to see my boyfriend",
       "words": [
         {
-          "word": " Anyway,",
-          "start": 69.89,
-          "end": 70.09
+          "word": " But",
+          "start": 36.58,
+          "end": 37.58
         },
         {
-          "word": " the",
-          "start": 70.61,
-          "end": 70.71
+          "word": " today",
+          "start": 37.58,
+          "end": 37.94
         },
         {
-          "word": " second",
-          "start": 70.71,
-          "end": 70.97
+          "word": " I",
+          "start": 37.94,
+          "end": 38.12
         },
         {
-          "word": " part",
-          "start": 70.97,
-          "end": 71.29
+          "word": " am",
+          "start": 38.12,
+          "end": 38.3
         },
         {
-          "word": " is",
-          "start": 71.29,
-          "end": 71.53
+          "word": " getting",
+          "start": 38.3,
+          "end": 38.52
         },
         {
-          "word": " a",
-          "start": 71.53,
-          "end": 71.77
-        },
-        {
-          "word": " segment",
-          "start": 71.77,
-          "end": 72.09
-        },
-        {
-          "word": " selection,",
-          "start": 72.09,
-          "end": 72.67
-        },
-        {
-          "word": " and",
-          "start": 73.15,
-          "end": 73.35
-        },
-        {
-          "word": " LLM",
-          "start": 73.35,
-          "end": 73.81
-        },
-        {
-          "word": " reads",
-          "start": 73.81,
-          "end": 74.13
-        },
-        {
-          "word": " through",
-          "start": 74.13,
-          "end": 74.43
-        },
-        {
-          "word": " all",
-          "start": 74.43,
-          "end": 74.67
-        },
-        {
-          "word": " of",
-          "start": 74.67,
-          "end": 74.79
-        },
-        {
-          "word": " the",
-          "start": 74.79,
-          "end": 75.01
-        },
-        {
-          "word": " transcript",
-          "start": 75.01,
-          "end": 75.39
-        },
-        {
-          "word": " segments",
-          "start": 75.39,
-          "end": 75.93
-        },
-        {
-          "word": " along",
-          "start": 75.93,
-          "end": 76.37
-        },
-        {
-          "word": " with",
-          "start": 76.37,
-          "end": 76.61
-        },
-        {
-          "word": " a",
-          "start": 76.61,
-          "end": 76.87
-        },
-        {
-          "word": " brief,",
-          "start": 76.87,
-          "end": 77.13
-        },
-        {
-          "word": " like,",
-          "start": 77.61,
-          "end": 77.97
-        },
-        {
-          "word": " only",
-          "start": 78.09,
-          "end": 78.49
-        },
-        {
-          "word": " keep",
-          "start": 78.49,
-          "end": 78.71
-        },
-        {
-          "word": " the",
-          "start": 78.71,
-          "end": 78.93
-        },
-        {
-          "word": " technical",
-          "start": 78.93,
-          "end": 79.19
-        },
-        {
-          "word": " parts,",
-          "start": 79.19,
-          "end": 79.59
-        },
-        {
-          "word": " and",
-          "start": 80.17,
-          "end": 80.39
-        },
-        {
-          "word": " decides",
-          "start": 80.39,
-          "end": 80.87
-        },
-        {
-          "word": " which",
-          "start": 80.87,
-          "end": 81.19
-        },
-        {
-          "word": " ones",
-          "start": 81.19,
-          "end": 81.37
+          "word": " ready",
+          "start": 38.52,
+          "end": 38.86
         },
         {
           "word": " to",
-          "start": 81.37,
-          "end": 81.55
+          "start": 38.86,
+          "end": 39.46
         },
         {
-          "word": " keep",
-          "start": 81.55,
-          "end": 81.77
-        },
-        {
-          "word": " and",
-          "start": 81.77,
-          "end": 81.97
-        },
-        {
-          "word": " which",
-          "start": 81.97,
-          "end": 82.23
+          "word": " go",
+          "start": 39.46,
+          "end": 39.84
         },
         {
           "word": " to",
-          "start": 82.23,
-          "end": 82.41
+          "start": 39.84,
+          "end": 40.12
         },
         {
-          "word": " cut.",
-          "start": 82.41,
-          "end": 82.75
+          "word": " Georgia",
+          "start": 40.12,
+          "end": 40.42
+        },
+        {
+          "word": " tomorrow",
+          "start": 40.42,
+          "end": 41.16
+        },
+        {
+          "word": " and",
+          "start": 41.16,
+          "end": 41.44
+        },
+        {
+          "word": " drive",
+          "start": 41.44,
+          "end": 41.6
+        },
+        {
+          "word": " nine",
+          "start": 41.6,
+          "end": 41.82
+        },
+        {
+          "word": " hours",
+          "start": 41.82,
+          "end": 42.12
+        },
+        {
+          "word": " to",
+          "start": 42.12,
+          "end": 42.3
+        },
+        {
+          "word": " see",
+          "start": 42.3,
+          "end": 42.42
+        },
+        {
+          "word": " my",
+          "start": 42.42,
+          "end": 42.64
+        },
+        {
+          "word": " boyfriend",
+          "start": 42.64,
+          "end": 42.98
         }
       ]
     },
@@ -1090,79 +815,104 @@
       "id": "seg-0009",
       "order": 9,
       "included": true,
-      "start": 83.27,
-      "end": 86.87,
-      "text": "Kind of like how a human editor would skim through and mark things up.",
+      "start": 42.98,
+      "end": 46.46,
+      "text": "So we have a lot of things to do. I have to pack and I have to get ready",
       "words": [
         {
-          "word": " Kind",
-          "start": 83.27,
-          "end": 83.51
+          "word": " So",
+          "start": 42.98,
+          "end": 43.18
         },
         {
-          "word": " of",
-          "start": 83.51,
-          "end": 83.65
+          "word": " we",
+          "start": 43.18,
+          "end": 43.32
         },
         {
-          "word": " like",
-          "start": 83.65,
-          "end": 83.79
-        },
-        {
-          "word": " how",
-          "start": 83.79,
-          "end": 84.05
+          "word": " have",
+          "start": 43.32,
+          "end": 43.72
         },
         {
           "word": " a",
-          "start": 84.05,
-          "end": 84.25
+          "start": 43.72,
+          "end": 44.02
         },
         {
-          "word": " human",
-          "start": 84.25,
-          "end": 84.45
+          "word": " lot",
+          "start": 44.02,
+          "end": 44.22
         },
         {
-          "word": " editor",
-          "start": 84.45,
-          "end": 84.79
-        },
-        {
-          "word": " would",
-          "start": 84.79,
-          "end": 85.15
-        },
-        {
-          "word": " skim",
-          "start": 85.15,
-          "end": 85.43
-        },
-        {
-          "word": " through",
-          "start": 85.43,
-          "end": 85.79
-        },
-        {
-          "word": " and",
-          "start": 85.79,
-          "end": 86.09
-        },
-        {
-          "word": " mark",
-          "start": 86.09,
-          "end": 86.27
+          "word": " of",
+          "start": 44.22,
+          "end": 44.38
         },
         {
           "word": " things",
-          "start": 86.27,
-          "end": 86.55
+          "start": 44.38,
+          "end": 44.56
         },
         {
-          "word": " up.",
-          "start": 86.55,
-          "end": 86.87
+          "word": " to",
+          "start": 44.56,
+          "end": 44.72
+        },
+        {
+          "word": " do.",
+          "start": 44.72,
+          "end": 44.84
+        },
+        {
+          "word": " I",
+          "start": 44.84,
+          "end": 44.94
+        },
+        {
+          "word": " have",
+          "start": 44.94,
+          "end": 45.1
+        },
+        {
+          "word": " to",
+          "start": 45.1,
+          "end": 45.3
+        },
+        {
+          "word": " pack",
+          "start": 45.3,
+          "end": 45.5
+        },
+        {
+          "word": " and",
+          "start": 45.5,
+          "end": 45.66
+        },
+        {
+          "word": " I",
+          "start": 45.66,
+          "end": 45.72
+        },
+        {
+          "word": " have",
+          "start": 45.72,
+          "end": 45.86
+        },
+        {
+          "word": " to",
+          "start": 45.86,
+          "end": 45.98
+        },
+        {
+          "word": " get",
+          "start": 45.98,
+          "end": 46.12
+        },
+        {
+          "word": " ready",
+          "start": 46.12,
+          "end": 46.46
         }
       ]
     },
@@ -1170,129 +920,89 @@
       "id": "seg-0010",
       "order": 10,
       "included": true,
-      "start": 92.54,
-      "end": 102.8,
-      "text": "And the last piece, the one I'm most excited about, is that the system can actually splice the footage back together automatically using FMPEG.",
+      "start": 46.46,
+      "end": 52.38,
+      "text": "I almost feel like this exact setup looks exactly like the intro of last video my",
       "words": [
         {
-          "word": " And",
-          "start": 92.54,
-          "end": 93.2
+          "word": " I",
+          "start": 46.46,
+          "end": 46.86
+        },
+        {
+          "word": " almost",
+          "start": 46.86,
+          "end": 47.14
+        },
+        {
+          "word": " feel",
+          "start": 47.14,
+          "end": 47.3
+        },
+        {
+          "word": " like",
+          "start": 47.3,
+          "end": 47.7
+        },
+        {
+          "word": " this",
+          "start": 47.7,
+          "end": 48.08
+        },
+        {
+          "word": " exact",
+          "start": 48.08,
+          "end": 48.76
+        },
+        {
+          "word": " setup",
+          "start": 48.76,
+          "end": 49.1
+        },
+        {
+          "word": " looks",
+          "start": 49.1,
+          "end": 49.36
+        },
+        {
+          "word": " exactly",
+          "start": 49.36,
+          "end": 49.74
+        },
+        {
+          "word": " like",
+          "start": 49.74,
+          "end": 49.98
         },
         {
           "word": " the",
-          "start": 93.2,
-          "end": 93.38
+          "start": 49.98,
+          "end": 50.22
+        },
+        {
+          "word": " intro",
+          "start": 50.22,
+          "end": 50.52
+        },
+        {
+          "word": " of",
+          "start": 50.52,
+          "end": 51.26
         },
         {
           "word": " last",
-          "start": 93.38,
-          "end": 93.74
+          "start": 51.26,
+          "end": 51.64
         },
         {
-          "word": " piece,",
-          "start": 93.74,
-          "end": 94.18
+          "word": " video",
+          "start": 51.64,
+          "end": 52.08
         },
         {
-          "word": " the",
-          "start": 94.3,
-          "end": 94.52
-        },
-        {
-          "word": " one",
-          "start": 94.52,
-          "end": 94.6
-        },
-        {
-          "word": " I'm",
-          "start": 94.6,
-          "end": 94.76
-        },
-        {
-          "word": " most",
-          "start": 94.76,
-          "end": 95.06
-        },
-        {
-          "word": " excited",
-          "start": 95.06,
-          "end": 95.42
-        },
-        {
-          "word": " about,",
-          "start": 95.42,
-          "end": 95.94
-        },
-        {
-          "word": " is",
-          "start": 96.48,
-          "end": 96.62
-        },
-        {
-          "word": " that",
-          "start": 96.62,
-          "end": 96.78
-        },
-        {
-          "word": " the",
-          "start": 96.78,
-          "end": 96.96
-        },
-        {
-          "word": " system",
-          "start": 96.96,
-          "end": 97.32
-        },
-        {
-          "word": " can",
-          "start": 97.32,
-          "end": 97.7
-        },
-        {
-          "word": " actually",
-          "start": 97.7,
-          "end": 98.22
-        },
-        {
-          "word": " splice",
-          "start": 98.22,
-          "end": 98.58
-        },
-        {
-          "word": " the",
-          "start": 98.58,
-          "end": 98.82
-        },
-        {
-          "word": " footage",
-          "start": 98.82,
-          "end": 99.14
-        },
-        {
-          "word": " back",
-          "start": 99.14,
-          "end": 99.4
-        },
-        {
-          "word": " together",
-          "start": 99.4,
-          "end": 99.8
-        },
-        {
-          "word": " automatically",
-          "start": 99.8,
-          "end": 100.46
-        },
-        {
-          "word": " using",
-          "start": 100.46,
-          "end": 101.52
-        },
-        {
-          "word": " FMPEG.",
-          "start": 101.52,
-          "end": 102.8
+          "word": " my",
+          "start": 52.08,
+          "end": 52.38
         }
       ]
     },
@@ -1300,94 +1010,99 @@
       "id": "seg-0011",
       "order": 11,
       "included": true,
-      "start": 103.02,
-      "end": 108.96,
-      "text": "So you end up with a fully edited video without ever opening a timeline editor by hand.",
+      "start": 53.48,
+      "end": 58.26,
+      "text": "Stache tour of my needlepoint like I'm wearing. Oh am I wearing the same sweatshirt? No, I'm not",
       "words": [
         {
-          "word": " So",
-          "start": 103.02,
-          "end": 103.44
+          "word": " Stache",
+          "start": 53.48,
+          "end": 53.92
         },
         {
-          "word": " you",
-          "start": 103.44,
-          "end": 103.78
+          "word": " tour",
+          "start": 53.92,
+          "end": 54.14
         },
         {
-          "word": " end",
-          "start": 103.78,
-          "end": 104.02
+          "word": " of",
+          "start": 54.14,
+          "end": 54.34
         },
         {
-          "word": " up",
-          "start": 104.02,
-          "end": 104.26
+          "word": " my",
+          "start": 54.34,
+          "end": 54.54
         },
         {
-          "word": " with",
-          "start": 104.26,
-          "end": 104.66
+          "word": " needlepoint",
+          "start": 54.54,
+          "end": 55.0
         },
         {
-          "word": " a",
-          "start": 104.66,
-          "end": 104.88
+          "word": " like",
+          "start": 55.0,
+          "end": 55.14
         },
         {
-          "word": " fully",
-          "start": 104.88,
-          "end": 105.32
+          "word": " I'm",
+          "start": 55.14,
+          "end": 55.4
         },
         {
-          "word": " edited",
-          "start": 105.32,
-          "end": 105.68
+          "word": " wearing.",
+          "start": 55.4,
+          "end": 55.64
         },
         {
-          "word": " video",
-          "start": 105.68,
-          "end": 106.16
+          "word": " Oh",
+          "start": 55.64,
+          "end": 56.06
         },
         {
-          "word": " without",
-          "start": 106.16,
-          "end": 106.54
+          "word": " am",
+          "start": 56.06,
+          "end": 56.14
         },
         {
-          "word": " ever",
-          "start": 106.54,
-          "end": 107.04
+          "word": " I",
+          "start": 56.14,
+          "end": 56.28
         },
         {
-          "word": " opening",
-          "start": 107.04,
-          "end": 107.38
+          "word": " wearing",
+          "start": 56.28,
+          "end": 56.42
         },
         {
-          "word": " a",
-          "start": 107.38,
-          "end": 107.66
+          "word": " the",
+          "start": 56.42,
+          "end": 56.66
         },
         {
-          "word": " timeline",
-          "start": 107.66,
-          "end": 107.94
+          "word": " same",
+          "start": 56.66,
+          "end": 56.88
         },
         {
-          "word": " editor",
-          "start": 107.94,
-          "end": 108.32
+          "word": " sweatshirt?",
+          "start": 56.88,
+          "end": 57.44
         },
         {
-          "word": " by",
-          "start": 108.32,
-          "end": 108.64
+          "word": " No,",
+          "start": 57.72,
+          "end": 57.76
         },
         {
-          "word": " hand.",
-          "start": 108.64,
-          "end": 108.96
+          "word": " I'm",
+          "start": 57.76,
+          "end": 57.92
+        },
+        {
+          "word": " not",
+          "start": 57.92,
+          "end": 58.26
         }
       ]
     },
@@ -1395,314 +1110,2714 @@
       "id": "seg-0012",
       "order": 12,
       "included": true,
-      "start": 109.54,
-      "end": 111.94,
-      "text": "That part feels the most like magic to me.",
+      "start": 58.26,
+      "end": 59.44,
+      "text": "This is not the same sweatshirt",
       "words": [
         {
-          "word": " That",
-          "start": 109.54,
-          "end": 109.76
+          "word": " This",
+          "start": 58.26,
+          "end": 58.64
         },
         {
-          "word": " part",
-          "start": 109.76,
-          "end": 109.98
+          "word": " is",
+          "start": 58.64,
+          "end": 58.8
         },
         {
-          "word": " feels",
-          "start": 109.98,
-          "end": 110.32
+          "word": " not",
+          "start": 58.8,
+          "end": 58.86
         },
         {
           "word": " the",
-          "start": 110.32,
-          "end": 110.6
+          "start": 58.86,
+          "end": 59.04
         },
         {
-          "word": " most",
-          "start": 110.6,
-          "end": 110.88
+          "word": " same",
+          "start": 59.04,
+          "end": 59.22
         },
         {
-          "word": " like",
-          "start": 110.88,
-          "end": 111.1
-        },
-        {
-          "word": " magic",
-          "start": 111.1,
-          "end": 111.4
-        },
-        {
-          "word": " to",
-          "start": 111.4,
-          "end": 111.6
-        },
-        {
-          "word": " me.",
-          "start": 111.6,
-          "end": 111.94
+          "word": " sweatshirt",
+          "start": 59.22,
+          "end": 59.44
         }
       ]
     },
     {
       "id": "seg-0013",
-      "order": 14,
-      "included": false,
-      "start": 112.5,
-      "end": 115.18,
-      "text": "So, um, yeah, that's basically it.",
+      "order": 13,
+      "included": true,
+      "start": 59.44,
+      "end": 63.74,
+      "text": "But of course it's pink but I have just a really comfy outfit on to go see my grandparents",
       "words": [
         {
-          "word": " So,",
-          "start": 112.5,
-          "end": 112.78
+          "word": " But",
+          "start": 59.44,
+          "end": 59.56
         },
         {
-          "word": " um,",
-          "start": 113.12,
-          "end": 113.12
+          "word": " of",
+          "start": 59.56,
+          "end": 59.72
         },
         {
-          "word": " yeah,",
-          "start": 113.28,
-          "end": 113.54
+          "word": " course",
+          "start": 59.72,
+          "end": 59.9
         },
         {
-          "word": " that's",
-          "start": 113.7,
-          "end": 113.86
+          "word": " it's",
+          "start": 59.9,
+          "end": 60.06
         },
         {
-          "word": " basically",
-          "start": 113.86,
-          "end": 114.66
+          "word": " pink",
+          "start": 60.06,
+          "end": 60.36
         },
         {
-          "word": " it.",
-          "start": 114.66,
-          "end": 115.18
+          "word": " but",
+          "start": 60.36,
+          "end": 60.84
+        },
+        {
+          "word": " I",
+          "start": 60.84,
+          "end": 61.0
+        },
+        {
+          "word": " have",
+          "start": 61.0,
+          "end": 61.12
+        },
+        {
+          "word": " just",
+          "start": 61.12,
+          "end": 61.28
+        },
+        {
+          "word": " a",
+          "start": 61.28,
+          "end": 61.44
+        },
+        {
+          "word": " really",
+          "start": 61.44,
+          "end": 61.66
+        },
+        {
+          "word": " comfy",
+          "start": 61.66,
+          "end": 61.96
+        },
+        {
+          "word": " outfit",
+          "start": 61.96,
+          "end": 62.24
+        },
+        {
+          "word": " on",
+          "start": 62.24,
+          "end": 62.38
+        },
+        {
+          "word": " to",
+          "start": 62.38,
+          "end": 62.54
+        },
+        {
+          "word": " go",
+          "start": 62.54,
+          "end": 62.74
+        },
+        {
+          "word": " see",
+          "start": 62.74,
+          "end": 62.88
+        },
+        {
+          "word": " my",
+          "start": 62.88,
+          "end": 63.18
+        },
+        {
+          "word": " grandparents",
+          "start": 63.18,
+          "end": 63.74
         }
       ]
     },
     {
       "id": "seg-0014",
-      "order": 15,
-      "included": false,
-      "start": 115.72,
-      "end": 124.08,
-      "text": "That's the three parts, transcription, and then the, um, the selection thing, and then the last one with the video stuff.",
+      "order": 14,
+      "included": true,
+      "start": 63.74,
+      "end": 69.14,
+      "text": "So let's go see them. It's 8 o'clock right now. I've been waking up really early and",
       "words": [
         {
-          "word": " That's",
-          "start": 115.72,
-          "end": 116.36
+          "word": " So",
+          "start": 63.74,
+          "end": 64.54
         },
         {
-          "word": " the",
-          "start": 116.36,
-          "end": 116.44
+          "word": " let's",
+          "start": 64.54,
+          "end": 64.78
         },
         {
-          "word": " three",
-          "start": 116.44,
-          "end": 116.68
+          "word": " go",
+          "start": 64.78,
+          "end": 65.34
         },
         {
-          "word": " parts,",
-          "start": 116.68,
-          "end": 117.14
+          "word": " see",
+          "start": 65.34,
+          "end": 65.6
         },
         {
-          "word": " transcription,",
-          "start": 117.38,
-          "end": 118.22
+          "word": " them.",
+          "start": 65.6,
+          "end": 65.88
+        },
+        {
+          "word": " It's",
+          "start": 65.88,
+          "end": 66.26
+        },
+        {
+          "word": " 8",
+          "start": 66.26,
+          "end": 66.5
+        },
+        {
+          "word": " o",
+          "start": 66.5,
+          "end": 66.66
+        },
+        {
+          "word": "'clock",
+          "start": 66.66,
+          "end": 66.82
+        },
+        {
+          "word": " right",
+          "start": 66.82,
+          "end": 67.08
+        },
+        {
+          "word": " now.",
+          "start": 67.08,
+          "end": 67.36
+        },
+        {
+          "word": " I've",
+          "start": 67.36,
+          "end": 67.56
+        },
+        {
+          "word": " been",
+          "start": 67.56,
+          "end": 67.64
+        },
+        {
+          "word": " waking",
+          "start": 67.64,
+          "end": 67.94
+        },
+        {
+          "word": " up",
+          "start": 67.94,
+          "end": 68.24
+        },
+        {
+          "word": " really",
+          "start": 68.24,
+          "end": 68.56
+        },
+        {
+          "word": " early",
+          "start": 68.56,
+          "end": 68.92
         },
         {
           "word": " and",
-          "start": 118.22,
-          "end": 118.52
-        },
-        {
-          "word": " then",
-          "start": 118.52,
-          "end": 119.26
-        },
-        {
-          "word": " the,",
-          "start": 119.26,
-          "end": 119.66
-        },
-        {
-          "word": " um,",
-          "start": 119.66,
-          "end": 120.3
-        },
-        {
-          "word": " the",
-          "start": 120.44,
-          "end": 120.64
-        },
-        {
-          "word": " selection",
-          "start": 120.64,
-          "end": 121.08
-        },
-        {
-          "word": " thing,",
-          "start": 121.08,
-          "end": 121.56
-        },
-        {
-          "word": " and",
-          "start": 122.1,
-          "end": 122.26
-        },
-        {
-          "word": " then",
-          "start": 122.26,
-          "end": 122.52
-        },
-        {
-          "word": " the",
-          "start": 122.52,
-          "end": 122.66
-        },
-        {
-          "word": " last",
-          "start": 122.66,
-          "end": 122.88
-        },
-        {
-          "word": " one",
-          "start": 122.88,
-          "end": 123.06
-        },
-        {
-          "word": " with",
-          "start": 123.06,
-          "end": 123.32
-        },
-        {
-          "word": " the",
-          "start": 123.32,
-          "end": 123.52
-        },
-        {
-          "word": " video",
-          "start": 123.52,
-          "end": 123.76
-        },
-        {
-          "word": " stuff.",
-          "start": 123.76,
-          "end": 124.08
+          "start": 68.92,
+          "end": 69.14
         }
       ]
     },
     {
       "id": "seg-0015",
-      "order": 13,
-      "included": false,
-      "start": 126.08,
-      "end": 128.1,
-      "text": "Okay, I think that's everything I wanted to cover.",
+      "order": 15,
+      "included": true,
+      "start": 69.74,
+      "end": 73.08,
+      "text": "Honestly, I've been laying in bed because I just I can't sleep recently",
       "words": [
         {
-          "word": " Okay,",
-          "start": 126.08,
-          "end": 126.26
+          "word": " Honestly,",
+          "start": 69.74,
+          "end": 70.18
+        },
+        {
+          "word": " I've",
+          "start": 70.18,
+          "end": 70.32
+        },
+        {
+          "word": " been",
+          "start": 70.32,
+          "end": 70.42
+        },
+        {
+          "word": " laying",
+          "start": 70.42,
+          "end": 70.58
+        },
+        {
+          "word": " in",
+          "start": 70.58,
+          "end": 70.84
+        },
+        {
+          "word": " bed",
+          "start": 70.84,
+          "end": 70.94
+        },
+        {
+          "word": " because",
+          "start": 70.94,
+          "end": 71.18
         },
         {
           "word": " I",
-          "start": 126.36,
-          "end": 126.42
+          "start": 71.18,
+          "end": 71.36
         },
         {
-          "word": " think",
-          "start": 126.42,
-          "end": 126.56
-        },
-        {
-          "word": " that's",
-          "start": 126.56,
-          "end": 127.08
-        },
-        {
-          "word": " everything",
-          "start": 127.08,
-          "end": 127.32
+          "word": " just",
+          "start": 71.36,
+          "end": 71.6
         },
         {
           "word": " I",
-          "start": 127.32,
-          "end": 127.44
+          "start": 71.6,
+          "end": 71.9
         },
         {
-          "word": " wanted",
-          "start": 127.44,
-          "end": 127.64
+          "word": " can't",
+          "start": 71.9,
+          "end": 72.28
         },
         {
-          "word": " to",
-          "start": 127.64,
-          "end": 127.8
+          "word": " sleep",
+          "start": 72.28,
+          "end": 72.48
         },
         {
-          "word": " cover.",
-          "start": 127.8,
-          "end": 128.1
+          "word": " recently",
+          "start": 72.48,
+          "end": 73.08
         }
       ]
     },
     {
       "id": "seg-0016",
       "order": 16,
-      "included": false,
-      "start": 128.56,
-      "end": 130.08,
-      "text": "Thanks for watching, I guess.",
+      "included": true,
+      "start": 73.08,
+      "end": 77.28,
+      "text": "But I woke up at 7 this morning and I'm so hyper as you can tell I've had so much energy",
       "words": [
         {
-          "word": " Thanks",
-          "start": 128.56,
-          "end": 128.82
-        },
-        {
-          "word": " for",
-          "start": 128.82,
-          "end": 129.12
-        },
-        {
-          "word": " watching,",
-          "start": 129.12,
-          "end": 129.48
+          "word": " But",
+          "start": 73.08,
+          "end": 73.56
         },
         {
           "word": " I",
-          "start": 129.7,
-          "end": 129.78
+          "start": 73.56,
+          "end": 73.66
         },
         {
-          "word": " guess.",
-          "start": 129.78,
-          "end": 130.08
+          "word": " woke",
+          "start": 73.66,
+          "end": 73.78
+        },
+        {
+          "word": " up",
+          "start": 73.78,
+          "end": 73.9
+        },
+        {
+          "word": " at",
+          "start": 73.9,
+          "end": 74.12
+        },
+        {
+          "word": " 7",
+          "start": 74.12,
+          "end": 74.28
+        },
+        {
+          "word": " this",
+          "start": 74.28,
+          "end": 74.5
+        },
+        {
+          "word": " morning",
+          "start": 74.5,
+          "end": 74.78
+        },
+        {
+          "word": " and",
+          "start": 74.78,
+          "end": 74.88
+        },
+        {
+          "word": " I'm",
+          "start": 74.88,
+          "end": 75.22
+        },
+        {
+          "word": " so",
+          "start": 75.22,
+          "end": 75.46
+        },
+        {
+          "word": " hyper",
+          "start": 75.46,
+          "end": 75.72
+        },
+        {
+          "word": " as",
+          "start": 75.72,
+          "end": 75.9
+        },
+        {
+          "word": " you",
+          "start": 75.9,
+          "end": 76.02
+        },
+        {
+          "word": " can",
+          "start": 76.02,
+          "end": 76.22
+        },
+        {
+          "word": " tell",
+          "start": 76.22,
+          "end": 76.36
+        },
+        {
+          "word": " I've",
+          "start": 76.36,
+          "end": 76.56
+        },
+        {
+          "word": " had",
+          "start": 76.56,
+          "end": 76.7
+        },
+        {
+          "word": " so",
+          "start": 76.7,
+          "end": 76.92
+        },
+        {
+          "word": " much",
+          "start": 76.92,
+          "end": 77.06
+        },
+        {
+          "word": " energy",
+          "start": 77.06,
+          "end": 77.28
         }
       ]
     },
     {
       "id": "seg-0017",
       "order": 17,
-      "included": false,
-      "start": 130.4,
-      "end": 130.6,
-      "text": "Bye.",
+      "included": true,
+      "start": 78.08,
+      "end": 80.32,
+      "text": "But before we go see my grandparents",
       "words": [
         {
-          "word": " Bye.",
-          "start": 130.4,
-          "end": 130.6
+          "word": " But",
+          "start": 78.08,
+          "end": 78.52
+        },
+        {
+          "word": " before",
+          "start": 78.52,
+          "end": 78.96
+        },
+        {
+          "word": " we",
+          "start": 78.96,
+          "end": 79.36
+        },
+        {
+          "word": " go",
+          "start": 79.36,
+          "end": 79.6
+        },
+        {
+          "word": " see",
+          "start": 79.6,
+          "end": 79.72
+        },
+        {
+          "word": " my",
+          "start": 79.72,
+          "end": 79.96
+        },
+        {
+          "word": " grandparents",
+          "start": 79.96,
+          "end": 80.32
+        }
+      ]
+    },
+    {
+      "id": "seg-0018",
+      "order": 18,
+      "included": true,
+      "start": 80.32,
+      "end": 85.16,
+      "text": "I just got in a new package from Walmart of my outfit that I'm gonna wear",
+      "words": [
+        {
+          "word": " I",
+          "start": 80.32,
+          "end": 80.58
+        },
+        {
+          "word": " just",
+          "start": 80.58,
+          "end": 80.86
+        },
+        {
+          "word": " got",
+          "start": 80.86,
+          "end": 81.12
+        },
+        {
+          "word": " in",
+          "start": 81.12,
+          "end": 81.34
+        },
+        {
+          "word": " a",
+          "start": 81.34,
+          "end": 81.46
+        },
+        {
+          "word": " new",
+          "start": 81.46,
+          "end": 81.64
+        },
+        {
+          "word": " package",
+          "start": 81.64,
+          "end": 81.98
+        },
+        {
+          "word": " from",
+          "start": 81.98,
+          "end": 82.24
+        },
+        {
+          "word": " Walmart",
+          "start": 82.24,
+          "end": 82.66
+        },
+        {
+          "word": " of",
+          "start": 82.66,
+          "end": 83.46
+        },
+        {
+          "word": " my",
+          "start": 83.46,
+          "end": 83.94
+        },
+        {
+          "word": " outfit",
+          "start": 83.94,
+          "end": 84.3
+        },
+        {
+          "word": " that",
+          "start": 84.3,
+          "end": 84.44
+        },
+        {
+          "word": " I'm",
+          "start": 84.44,
+          "end": 84.6
+        },
+        {
+          "word": " gonna",
+          "start": 84.6,
+          "end": 84.78
+        },
+        {
+          "word": " wear",
+          "start": 84.78,
+          "end": 85.16
+        }
+      ]
+    },
+    {
+      "id": "seg-0019",
+      "order": 19,
+      "included": true,
+      "start": 85.16,
+      "end": 93.2,
+      "text": "With my boyfriend in Georgia. It's like Bridgerton inspired because that's coming out. So let me show you guys that I'm so excited about it",
+      "words": [
+        {
+          "word": " With",
+          "start": 85.16,
+          "end": 86.02
+        },
+        {
+          "word": " my",
+          "start": 86.02,
+          "end": 86.34
+        },
+        {
+          "word": " boyfriend",
+          "start": 86.34,
+          "end": 86.66
+        },
+        {
+          "word": " in",
+          "start": 86.66,
+          "end": 86.92
+        },
+        {
+          "word": " Georgia.",
+          "start": 86.92,
+          "end": 87.18
+        },
+        {
+          "word": " It's",
+          "start": 87.22,
+          "end": 87.44
+        },
+        {
+          "word": " like",
+          "start": 87.44,
+          "end": 87.64
+        },
+        {
+          "word": " Bridgerton",
+          "start": 87.64,
+          "end": 88.1
+        },
+        {
+          "word": " inspired",
+          "start": 88.1,
+          "end": 88.72
+        },
+        {
+          "word": " because",
+          "start": 88.72,
+          "end": 89.0
+        },
+        {
+          "word": " that's",
+          "start": 89.0,
+          "end": 89.36
+        },
+        {
+          "word": " coming",
+          "start": 89.36,
+          "end": 89.52
+        },
+        {
+          "word": " out.",
+          "start": 89.52,
+          "end": 89.94
+        },
+        {
+          "word": " So",
+          "start": 90.12,
+          "end": 90.48
+        },
+        {
+          "word": " let",
+          "start": 90.48,
+          "end": 90.68
+        },
+        {
+          "word": " me",
+          "start": 90.68,
+          "end": 90.96
+        },
+        {
+          "word": " show",
+          "start": 90.96,
+          "end": 91.16
+        },
+        {
+          "word": " you",
+          "start": 91.16,
+          "end": 91.32
+        },
+        {
+          "word": " guys",
+          "start": 91.32,
+          "end": 91.52
+        },
+        {
+          "word": " that",
+          "start": 91.52,
+          "end": 91.76
+        },
+        {
+          "word": " I'm",
+          "start": 91.76,
+          "end": 92.08
+        },
+        {
+          "word": " so",
+          "start": 92.08,
+          "end": 92.5
+        },
+        {
+          "word": " excited",
+          "start": 92.5,
+          "end": 92.82
+        },
+        {
+          "word": " about",
+          "start": 92.82,
+          "end": 93.02
+        },
+        {
+          "word": " it",
+          "start": 93.02,
+          "end": 93.2
+        }
+      ]
+    },
+    {
+      "id": "seg-0020",
+      "order": 20,
+      "included": true,
+      "start": 93.2,
+      "end": 98.54,
+      "text": "I think it's so cute. It's gonna be perfect for a little date night dinner with my boyfriend",
+      "words": [
+        {
+          "word": " I",
+          "start": 93.2,
+          "end": 93.2
+        },
+        {
+          "word": " think",
+          "start": 93.2,
+          "end": 93.32
+        },
+        {
+          "word": " it's",
+          "start": 93.32,
+          "end": 93.56
+        },
+        {
+          "word": " so",
+          "start": 93.56,
+          "end": 93.94
+        },
+        {
+          "word": " cute.",
+          "start": 93.94,
+          "end": 94.14
+        },
+        {
+          "word": " It's",
+          "start": 94.16,
+          "end": 94.4
+        },
+        {
+          "word": " gonna",
+          "start": 94.4,
+          "end": 94.48
+        },
+        {
+          "word": " be",
+          "start": 94.48,
+          "end": 95.1
+        },
+        {
+          "word": " perfect",
+          "start": 95.1,
+          "end": 95.62
+        },
+        {
+          "word": " for",
+          "start": 95.62,
+          "end": 96.0
+        },
+        {
+          "word": " a",
+          "start": 96.0,
+          "end": 96.14
+        },
+        {
+          "word": " little",
+          "start": 96.14,
+          "end": 96.46
+        },
+        {
+          "word": " date",
+          "start": 96.46,
+          "end": 96.72
+        },
+        {
+          "word": " night",
+          "start": 96.72,
+          "end": 97.06
+        },
+        {
+          "word": " dinner",
+          "start": 97.06,
+          "end": 97.38
+        },
+        {
+          "word": " with",
+          "start": 97.38,
+          "end": 97.78
+        },
+        {
+          "word": " my",
+          "start": 97.78,
+          "end": 98.08
+        },
+        {
+          "word": " boyfriend",
+          "start": 98.08,
+          "end": 98.54
+        }
+      ]
+    },
+    {
+      "id": "seg-0021",
+      "order": 21,
+      "included": true,
+      "start": 98.54,
+      "end": 104.0,
+      "text": "I was shopping Walmart for all of the Bridgerton vibes and I found this ador-",
+      "words": [
+        {
+          "word": " I",
+          "start": 98.54,
+          "end": 98.76
+        },
+        {
+          "word": " was",
+          "start": 98.76,
+          "end": 98.96
+        },
+        {
+          "word": " shopping",
+          "start": 98.96,
+          "end": 99.32
+        },
+        {
+          "word": " Walmart",
+          "start": 99.32,
+          "end": 99.7
+        },
+        {
+          "word": " for",
+          "start": 99.7,
+          "end": 100.0
+        },
+        {
+          "word": " all",
+          "start": 100.0,
+          "end": 100.24
+        },
+        {
+          "word": " of",
+          "start": 100.24,
+          "end": 100.36
+        },
+        {
+          "word": " the",
+          "start": 100.36,
+          "end": 100.5
+        },
+        {
+          "word": " Bridgerton",
+          "start": 100.5,
+          "end": 101.24
+        },
+        {
+          "word": " vibes",
+          "start": 101.24,
+          "end": 101.88
+        },
+        {
+          "word": " and",
+          "start": 101.88,
+          "end": 101.98
+        },
+        {
+          "word": " I",
+          "start": 101.98,
+          "end": 102.26
+        },
+        {
+          "word": " found",
+          "start": 102.26,
+          "end": 102.44
+        },
+        {
+          "word": " this",
+          "start": 102.44,
+          "end": 102.98
+        },
+        {
+          "word": " ador",
+          "start": 102.98,
+          "end": 103.58
+        },
+        {
+          "word": "-",
+          "start": 103.58,
+          "end": 104.0
+        }
+      ]
+    },
+    {
+      "id": "seg-0022",
+      "order": 22,
+      "included": true,
+      "start": 104.0,
+      "end": 110.3,
+      "text": "Geez the wheeze that is bright, but I found this adorable set and I cannot wait to wear it",
+      "words": [
+        {
+          "word": " Geez",
+          "start": 104.0,
+          "end": 104.3
+        },
+        {
+          "word": " the",
+          "start": 104.3,
+          "end": 104.6
+        },
+        {
+          "word": " wheeze",
+          "start": 104.6,
+          "end": 105.24
+        },
+        {
+          "word": " that",
+          "start": 105.24,
+          "end": 105.6
+        },
+        {
+          "word": " is",
+          "start": 105.6,
+          "end": 105.82
+        },
+        {
+          "word": " bright,",
+          "start": 105.82,
+          "end": 105.98
+        },
+        {
+          "word": " but",
+          "start": 105.98,
+          "end": 106.14
+        },
+        {
+          "word": " I",
+          "start": 106.14,
+          "end": 106.36
+        },
+        {
+          "word": " found",
+          "start": 106.36,
+          "end": 106.54
+        },
+        {
+          "word": " this",
+          "start": 106.54,
+          "end": 106.96
+        },
+        {
+          "word": " adorable",
+          "start": 106.96,
+          "end": 107.86
+        },
+        {
+          "word": " set",
+          "start": 107.86,
+          "end": 108.46
+        },
+        {
+          "word": " and",
+          "start": 108.46,
+          "end": 109.12
+        },
+        {
+          "word": " I",
+          "start": 109.12,
+          "end": 109.26
+        },
+        {
+          "word": " cannot",
+          "start": 109.26,
+          "end": 109.54
+        },
+        {
+          "word": " wait",
+          "start": 109.54,
+          "end": 109.8
+        },
+        {
+          "word": " to",
+          "start": 109.8,
+          "end": 110.02
+        },
+        {
+          "word": " wear",
+          "start": 110.02,
+          "end": 110.18
+        },
+        {
+          "word": " it",
+          "start": 110.18,
+          "end": 110.3
+        }
+      ]
+    },
+    {
+      "id": "seg-0023",
+      "order": 23,
+      "included": true,
+      "start": 110.82,
+      "end": 115.08,
+      "text": "It's giving Bridgerton to me. Like this is so beautiful. We have to go over here",
+      "words": [
+        {
+          "word": " It's",
+          "start": 110.82,
+          "end": 111.34
+        },
+        {
+          "word": " giving",
+          "start": 111.34,
+          "end": 111.58
+        },
+        {
+          "word": " Bridgerton",
+          "start": 111.58,
+          "end": 112.04
+        },
+        {
+          "word": " to",
+          "start": 112.04,
+          "end": 112.3
+        },
+        {
+          "word": " me.",
+          "start": 112.3,
+          "end": 112.52
+        },
+        {
+          "word": " Like",
+          "start": 112.7,
+          "end": 112.92
+        },
+        {
+          "word": " this",
+          "start": 112.92,
+          "end": 113.08
+        },
+        {
+          "word": " is",
+          "start": 113.08,
+          "end": 113.64
+        },
+        {
+          "word": " so",
+          "start": 113.64,
+          "end": 113.92
+        },
+        {
+          "word": " beautiful.",
+          "start": 113.92,
+          "end": 114.2
+        },
+        {
+          "word": " We",
+          "start": 114.24,
+          "end": 114.36
+        },
+        {
+          "word": " have",
+          "start": 114.36,
+          "end": 114.48
+        },
+        {
+          "word": " to",
+          "start": 114.48,
+          "end": 114.58
+        },
+        {
+          "word": " go",
+          "start": 114.58,
+          "end": 114.72
+        },
+        {
+          "word": " over",
+          "start": 114.72,
+          "end": 114.92
+        },
+        {
+          "word": " here",
+          "start": 114.92,
+          "end": 115.08
+        }
+      ]
+    },
+    {
+      "id": "seg-0024",
+      "order": 24,
+      "included": true,
+      "start": 115.08,
+      "end": 119.3,
+      "text": "That Sun is literally beaming into my eyeball, but here it is",
+      "words": [
+        {
+          "word": " That",
+          "start": 115.08,
+          "end": 115.26
+        },
+        {
+          "word": " Sun",
+          "start": 115.26,
+          "end": 115.5
+        },
+        {
+          "word": " is",
+          "start": 115.5,
+          "end": 115.82
+        },
+        {
+          "word": " literally",
+          "start": 115.82,
+          "end": 116.42
+        },
+        {
+          "word": " beaming",
+          "start": 116.42,
+          "end": 116.78
+        },
+        {
+          "word": " into",
+          "start": 116.78,
+          "end": 117.0
+        },
+        {
+          "word": " my",
+          "start": 117.0,
+          "end": 117.2
+        },
+        {
+          "word": " eyeball,",
+          "start": 117.2,
+          "end": 117.56
+        },
+        {
+          "word": " but",
+          "start": 117.56,
+          "end": 118.36
+        },
+        {
+          "word": " here",
+          "start": 118.36,
+          "end": 118.72
+        },
+        {
+          "word": " it",
+          "start": 118.72,
+          "end": 119.04
+        },
+        {
+          "word": " is",
+          "start": 119.04,
+          "end": 119.3
+        }
+      ]
+    },
+    {
+      "id": "seg-0025",
+      "order": 25,
+      "included": true,
+      "start": 120.18,
+      "end": 122.6,
+      "text": "Literally. Oh my gosh. Look see",
+      "words": [
+        {
+          "word": " Literally.",
+          "start": 120.18,
+          "end": 120.7
+        },
+        {
+          "word": " Oh",
+          "start": 120.7,
+          "end": 120.92
+        },
+        {
+          "word": " my",
+          "start": 120.92,
+          "end": 121.04
+        },
+        {
+          "word": " gosh.",
+          "start": 121.04,
+          "end": 121.2
+        },
+        {
+          "word": " Look",
+          "start": 121.28,
+          "end": 121.48
+        },
+        {
+          "word": " see",
+          "start": 121.48,
+          "end": 122.6
+        }
+      ]
+    },
+    {
+      "id": "seg-0026",
+      "order": 26,
+      "included": true,
+      "start": 122.6,
+      "end": 126.72,
+      "text": "Bridgerton Netflix. I had to shop around. It's the",
+      "words": [
+        {
+          "word": " Bridgerton",
+          "start": 122.6,
+          "end": 123.32
+        },
+        {
+          "word": " Netflix.",
+          "start": 123.32,
+          "end": 124.04
+        },
+        {
+          "word": " I",
+          "start": 124.48,
+          "end": 125.0
+        },
+        {
+          "word": " had",
+          "start": 125.0,
+          "end": 125.36
+        },
+        {
+          "word": " to",
+          "start": 125.36,
+          "end": 125.56
+        },
+        {
+          "word": " shop",
+          "start": 125.56,
+          "end": 125.7
+        },
+        {
+          "word": " around.",
+          "start": 125.7,
+          "end": 126.06
+        },
+        {
+          "word": " It's",
+          "start": 126.08,
+          "end": 126.46
+        },
+        {
+          "word": " the",
+          "start": 126.46,
+          "end": 126.72
+        }
+      ]
+    },
+    {
+      "id": "seg-0027",
+      "order": 27,
+      "included": true,
+      "start": 127.44,
+      "end": 131.74,
+      "text": "Celebrity pink Bridgerton. This is going to be so cute",
+      "words": [
+        {
+          "word": " Celebrity",
+          "start": 127.44,
+          "end": 127.96
+        },
+        {
+          "word": " pink",
+          "start": 127.96,
+          "end": 128.42
+        },
+        {
+          "word": " Bridgerton.",
+          "start": 128.42,
+          "end": 128.98
+        },
+        {
+          "word": " This",
+          "start": 129.1,
+          "end": 129.42
+        },
+        {
+          "word": " is",
+          "start": 129.42,
+          "end": 129.7
+        },
+        {
+          "word": " going",
+          "start": 129.7,
+          "end": 129.9
+        },
+        {
+          "word": " to",
+          "start": 129.9,
+          "end": 130.22
+        },
+        {
+          "word": " be",
+          "start": 130.22,
+          "end": 130.56
+        },
+        {
+          "word": " so",
+          "start": 130.56,
+          "end": 131.24
+        },
+        {
+          "word": " cute",
+          "start": 131.24,
+          "end": 131.74
+        }
+      ]
+    },
+    {
+      "id": "seg-0028",
+      "order": 28,
+      "included": true,
+      "start": 131.74,
+      "end": 135.62,
+      "text": "everything on Walmart right now is adorable when it comes to Bridgerton and honestly",
+      "words": [
+        {
+          "word": " everything",
+          "start": 131.74,
+          "end": 132.56
+        },
+        {
+          "word": " on",
+          "start": 132.56,
+          "end": 132.8
+        },
+        {
+          "word": " Walmart",
+          "start": 132.8,
+          "end": 132.98
+        },
+        {
+          "word": " right",
+          "start": 132.98,
+          "end": 133.24
+        },
+        {
+          "word": " now",
+          "start": 133.24,
+          "end": 133.4
+        },
+        {
+          "word": " is",
+          "start": 133.4,
+          "end": 133.54
+        },
+        {
+          "word": " adorable",
+          "start": 133.54,
+          "end": 134.06
+        },
+        {
+          "word": " when",
+          "start": 134.06,
+          "end": 134.18
+        },
+        {
+          "word": " it",
+          "start": 134.18,
+          "end": 134.32
+        },
+        {
+          "word": " comes",
+          "start": 134.32,
+          "end": 134.54
+        },
+        {
+          "word": " to",
+          "start": 134.54,
+          "end": 134.72
+        },
+        {
+          "word": " Bridgerton",
+          "start": 134.72,
+          "end": 135.12
+        },
+        {
+          "word": " and",
+          "start": 135.12,
+          "end": 135.34
+        },
+        {
+          "word": " honestly",
+          "start": 135.34,
+          "end": 135.62
+        }
+      ]
+    },
+    {
+      "id": "seg-0029",
+      "order": 29,
+      "included": true,
+      "start": 135.62,
+      "end": 142.18,
+      "text": "Walmart has amazing stuff again, like who knew that Walmart had all of this stuff, especially Bridgerton vibes",
+      "words": [
+        {
+          "word": " Walmart",
+          "start": 135.62,
+          "end": 136.54
+        },
+        {
+          "word": " has",
+          "start": 136.54,
+          "end": 136.78
+        },
+        {
+          "word": " amazing",
+          "start": 136.78,
+          "end": 137.42
+        },
+        {
+          "word": " stuff",
+          "start": 137.42,
+          "end": 137.72
+        },
+        {
+          "word": " again,",
+          "start": 137.72,
+          "end": 137.98
+        },
+        {
+          "word": " like",
+          "start": 138.02,
+          "end": 138.34
+        },
+        {
+          "word": " who",
+          "start": 138.34,
+          "end": 138.64
+        },
+        {
+          "word": " knew",
+          "start": 138.64,
+          "end": 138.9
+        },
+        {
+          "word": " that",
+          "start": 138.9,
+          "end": 139.12
+        },
+        {
+          "word": " Walmart",
+          "start": 139.12,
+          "end": 139.34
+        },
+        {
+          "word": " had",
+          "start": 139.34,
+          "end": 139.62
+        },
+        {
+          "word": " all",
+          "start": 139.62,
+          "end": 139.88
+        },
+        {
+          "word": " of",
+          "start": 139.88,
+          "end": 140.02
+        },
+        {
+          "word": " this",
+          "start": 140.02,
+          "end": 140.2
+        },
+        {
+          "word": " stuff,",
+          "start": 140.2,
+          "end": 140.42
+        },
+        {
+          "word": " especially",
+          "start": 140.64,
+          "end": 140.92
+        },
+        {
+          "word": " Bridgerton",
+          "start": 140.92,
+          "end": 141.84
+        },
+        {
+          "word": " vibes",
+          "start": 141.84,
+          "end": 142.18
+        }
+      ]
+    },
+    {
+      "id": "seg-0030",
+      "order": 30,
+      "included": true,
+      "start": 142.18,
+      "end": 148.86,
+      "text": "But anyways, look at how cute this top is. I think I could wear this even just with like jeans",
+      "words": [
+        {
+          "word": " But",
+          "start": 142.18,
+          "end": 142.84
+        },
+        {
+          "word": " anyways,",
+          "start": 142.84,
+          "end": 143.64
+        },
+        {
+          "word": " look",
+          "start": 144.18,
+          "end": 144.32
+        },
+        {
+          "word": " at",
+          "start": 144.32,
+          "end": 144.5
+        },
+        {
+          "word": " how",
+          "start": 144.5,
+          "end": 144.86
+        },
+        {
+          "word": " cute",
+          "start": 144.86,
+          "end": 145.08
+        },
+        {
+          "word": " this",
+          "start": 145.08,
+          "end": 145.38
+        },
+        {
+          "word": " top",
+          "start": 145.38,
+          "end": 145.66
+        },
+        {
+          "word": " is.",
+          "start": 145.66,
+          "end": 146.38
+        },
+        {
+          "word": " I",
+          "start": 146.58,
+          "end": 146.86
+        },
+        {
+          "word": " think",
+          "start": 146.86,
+          "end": 147.02
+        },
+        {
+          "word": " I",
+          "start": 147.02,
+          "end": 147.14
+        },
+        {
+          "word": " could",
+          "start": 147.14,
+          "end": 147.28
+        },
+        {
+          "word": " wear",
+          "start": 147.28,
+          "end": 147.42
+        },
+        {
+          "word": " this",
+          "start": 147.42,
+          "end": 147.64
+        },
+        {
+          "word": " even",
+          "start": 147.64,
+          "end": 147.9
+        },
+        {
+          "word": " just",
+          "start": 147.9,
+          "end": 148.08
+        },
+        {
+          "word": " with",
+          "start": 148.08,
+          "end": 148.28
+        },
+        {
+          "word": " like",
+          "start": 148.28,
+          "end": 148.56
+        },
+        {
+          "word": " jeans",
+          "start": 148.56,
+          "end": 148.86
+        }
+      ]
+    },
+    {
+      "id": "seg-0031",
+      "order": 31,
+      "included": true,
+      "start": 148.86,
+      "end": 150.16,
+      "text": "I need to get some from Walmart",
+      "words": [
+        {
+          "word": " I",
+          "start": 148.86,
+          "end": 149.12
+        },
+        {
+          "word": " need",
+          "start": 149.12,
+          "end": 149.26
+        },
+        {
+          "word": " to",
+          "start": 149.26,
+          "end": 149.38
+        },
+        {
+          "word": " get",
+          "start": 149.38,
+          "end": 149.44
+        },
+        {
+          "word": " some",
+          "start": 149.44,
+          "end": 149.62
+        },
+        {
+          "word": " from",
+          "start": 149.62,
+          "end": 149.82
+        },
+        {
+          "word": " Walmart",
+          "start": 149.82,
+          "end": 150.16
+        }
+      ]
+    },
+    {
+      "id": "seg-0032",
+      "order": 32,
+      "included": true,
+      "start": 150.16,
+      "end": 155.9,
+      "text": "But and then what I'm currently going to wear it with is this gorgeous skirt",
+      "words": [
+        {
+          "word": " But",
+          "start": 150.16,
+          "end": 151.04
+        },
+        {
+          "word": " and",
+          "start": 151.04,
+          "end": 151.4
+        },
+        {
+          "word": " then",
+          "start": 151.4,
+          "end": 151.88
+        },
+        {
+          "word": " what",
+          "start": 151.88,
+          "end": 152.28
+        },
+        {
+          "word": " I'm",
+          "start": 152.28,
+          "end": 152.48
+        },
+        {
+          "word": " currently",
+          "start": 152.48,
+          "end": 152.76
+        },
+        {
+          "word": " going",
+          "start": 152.76,
+          "end": 152.98
+        },
+        {
+          "word": " to",
+          "start": 152.98,
+          "end": 153.18
+        },
+        {
+          "word": " wear",
+          "start": 153.18,
+          "end": 153.28
+        },
+        {
+          "word": " it",
+          "start": 153.28,
+          "end": 153.46
+        },
+        {
+          "word": " with",
+          "start": 153.46,
+          "end": 153.62
+        },
+        {
+          "word": " is",
+          "start": 153.62,
+          "end": 154.2
+        },
+        {
+          "word": " this",
+          "start": 154.2,
+          "end": 154.7
+        },
+        {
+          "word": " gorgeous",
+          "start": 154.7,
+          "end": 155.48
+        },
+        {
+          "word": " skirt",
+          "start": 155.48,
+          "end": 155.9
+        }
+      ]
+    },
+    {
+      "id": "seg-0033",
+      "order": 33,
+      "included": true,
+      "start": 155.9,
+      "end": 162.1,
+      "text": "I've been loving a maxi skirt moment or just like a very long dress. I think it's so feminine",
+      "words": [
+        {
+          "word": " I've",
+          "start": 155.9,
+          "end": 156.24
+        },
+        {
+          "word": " been",
+          "start": 156.24,
+          "end": 156.48
+        },
+        {
+          "word": " loving",
+          "start": 156.48,
+          "end": 156.82
+        },
+        {
+          "word": " a",
+          "start": 156.82,
+          "end": 157.24
+        },
+        {
+          "word": " maxi",
+          "start": 157.24,
+          "end": 157.74
+        },
+        {
+          "word": " skirt",
+          "start": 157.74,
+          "end": 158.08
+        },
+        {
+          "word": " moment",
+          "start": 158.08,
+          "end": 158.5
+        },
+        {
+          "word": " or",
+          "start": 158.5,
+          "end": 158.66
+        },
+        {
+          "word": " just",
+          "start": 158.66,
+          "end": 158.78
+        },
+        {
+          "word": " like",
+          "start": 158.78,
+          "end": 158.9
+        },
+        {
+          "word": " a",
+          "start": 158.9,
+          "end": 159.06
+        },
+        {
+          "word": " very",
+          "start": 159.06,
+          "end": 159.34
+        },
+        {
+          "word": " long",
+          "start": 159.34,
+          "end": 159.62
+        },
+        {
+          "word": " dress.",
+          "start": 159.62,
+          "end": 160.04
+        },
+        {
+          "word": " I",
+          "start": 160.14,
+          "end": 160.7
+        },
+        {
+          "word": " think",
+          "start": 160.7,
+          "end": 160.86
+        },
+        {
+          "word": " it's",
+          "start": 160.86,
+          "end": 161.28
+        },
+        {
+          "word": " so",
+          "start": 161.28,
+          "end": 161.62
+        },
+        {
+          "word": " feminine",
+          "start": 161.62,
+          "end": 162.1
+        }
+      ]
+    },
+    {
+      "id": "seg-0034",
+      "order": 34,
+      "included": true,
+      "start": 162.1,
+      "end": 166.72,
+      "text": "So I'm gonna try this on just to see how it looks because I am going to pack it later",
+      "words": [
+        {
+          "word": " So",
+          "start": 162.1,
+          "end": 162.8
+        },
+        {
+          "word": " I'm",
+          "start": 162.8,
+          "end": 163.0
+        },
+        {
+          "word": " gonna",
+          "start": 163.0,
+          "end": 163.1
+        },
+        {
+          "word": " try",
+          "start": 163.1,
+          "end": 163.3
+        },
+        {
+          "word": " this",
+          "start": 163.3,
+          "end": 163.54
+        },
+        {
+          "word": " on",
+          "start": 163.54,
+          "end": 163.76
+        },
+        {
+          "word": " just",
+          "start": 163.76,
+          "end": 163.92
+        },
+        {
+          "word": " to",
+          "start": 163.92,
+          "end": 164.12
+        },
+        {
+          "word": " see",
+          "start": 164.12,
+          "end": 164.26
+        },
+        {
+          "word": " how",
+          "start": 164.26,
+          "end": 164.46
+        },
+        {
+          "word": " it",
+          "start": 164.46,
+          "end": 164.66
+        },
+        {
+          "word": " looks",
+          "start": 164.66,
+          "end": 164.84
+        },
+        {
+          "word": " because",
+          "start": 164.84,
+          "end": 165.12
+        },
+        {
+          "word": " I",
+          "start": 165.12,
+          "end": 165.34
+        },
+        {
+          "word": " am",
+          "start": 165.34,
+          "end": 165.54
+        },
+        {
+          "word": " going",
+          "start": 165.54,
+          "end": 165.7
+        },
+        {
+          "word": " to",
+          "start": 165.7,
+          "end": 165.98
+        },
+        {
+          "word": " pack",
+          "start": 165.98,
+          "end": 166.12
+        },
+        {
+          "word": " it",
+          "start": 166.12,
+          "end": 166.3
+        },
+        {
+          "word": " later",
+          "start": 166.3,
+          "end": 166.72
+        }
+      ]
+    },
+    {
+      "id": "seg-0035",
+      "order": 35,
+      "included": true,
+      "start": 166.72,
+      "end": 170.12,
+      "text": "And I mean it's in my hand already so we might as well try it on, you know",
+      "words": [
+        {
+          "word": " And",
+          "start": 166.72,
+          "end": 167.32
+        },
+        {
+          "word": " I",
+          "start": 167.32,
+          "end": 167.44
+        },
+        {
+          "word": " mean",
+          "start": 167.44,
+          "end": 167.52
+        },
+        {
+          "word": " it's",
+          "start": 167.52,
+          "end": 167.72
+        },
+        {
+          "word": " in",
+          "start": 167.72,
+          "end": 167.82
+        },
+        {
+          "word": " my",
+          "start": 167.82,
+          "end": 168.0
+        },
+        {
+          "word": " hand",
+          "start": 168.0,
+          "end": 168.18
+        },
+        {
+          "word": " already",
+          "start": 168.18,
+          "end": 168.48
+        },
+        {
+          "word": " so",
+          "start": 168.48,
+          "end": 168.68
+        },
+        {
+          "word": " we",
+          "start": 168.68,
+          "end": 168.8
+        },
+        {
+          "word": " might",
+          "start": 168.8,
+          "end": 168.9
+        },
+        {
+          "word": " as",
+          "start": 168.9,
+          "end": 169.04
+        },
+        {
+          "word": " well",
+          "start": 169.04,
+          "end": 169.16
+        },
+        {
+          "word": " try",
+          "start": 169.16,
+          "end": 169.36
+        },
+        {
+          "word": " it",
+          "start": 169.36,
+          "end": 169.56
+        },
+        {
+          "word": " on,",
+          "start": 169.56,
+          "end": 169.74
+        },
+        {
+          "word": " you",
+          "start": 169.76,
+          "end": 169.92
+        },
+        {
+          "word": " know",
+          "start": 169.92,
+          "end": 170.12
+        }
+      ]
+    },
+    {
+      "id": "seg-0036",
+      "order": 36,
+      "included": true,
+      "start": 170.12,
+      "end": 174.86,
+      "text": "I'm just super hyper right now. I have had no caffeine like I've had zero caffeine",
+      "words": [
+        {
+          "word": " I'm",
+          "start": 170.12,
+          "end": 170.34
+        },
+        {
+          "word": " just",
+          "start": 170.34,
+          "end": 170.66
+        },
+        {
+          "word": " super",
+          "start": 170.66,
+          "end": 171.04
+        },
+        {
+          "word": " hyper",
+          "start": 171.04,
+          "end": 171.32
+        },
+        {
+          "word": " right",
+          "start": 171.32,
+          "end": 171.58
+        },
+        {
+          "word": " now.",
+          "start": 171.58,
+          "end": 171.84
+        },
+        {
+          "word": " I",
+          "start": 171.96,
+          "end": 172.18
+        },
+        {
+          "word": " have",
+          "start": 172.18,
+          "end": 172.34
+        },
+        {
+          "word": " had",
+          "start": 172.34,
+          "end": 172.46
+        },
+        {
+          "word": " no",
+          "start": 172.46,
+          "end": 172.68
+        },
+        {
+          "word": " caffeine",
+          "start": 172.68,
+          "end": 173.1
+        },
+        {
+          "word": " like",
+          "start": 173.1,
+          "end": 173.8
+        },
+        {
+          "word": " I've",
+          "start": 173.8,
+          "end": 174.08
+        },
+        {
+          "word": " had",
+          "start": 174.08,
+          "end": 174.2
+        },
+        {
+          "word": " zero",
+          "start": 174.2,
+          "end": 174.54
+        },
+        {
+          "word": " caffeine",
+          "start": 174.54,
+          "end": 174.86
+        }
+      ]
+    },
+    {
+      "id": "seg-0037",
+      "order": 37,
+      "included": true,
+      "start": 174.86,
+      "end": 177.94,
+      "text": "I'm just so hyper so let's try this on and I'll show you guys what it looks like",
+      "words": [
+        {
+          "word": " I'm",
+          "start": 174.86,
+          "end": 175.06
+        },
+        {
+          "word": " just",
+          "start": 175.06,
+          "end": 175.22
+        },
+        {
+          "word": " so",
+          "start": 175.22,
+          "end": 175.42
+        },
+        {
+          "word": " hyper",
+          "start": 175.42,
+          "end": 175.66
+        },
+        {
+          "word": " so",
+          "start": 175.66,
+          "end": 175.92
+        },
+        {
+          "word": " let's",
+          "start": 175.92,
+          "end": 176.24
+        },
+        {
+          "word": " try",
+          "start": 176.24,
+          "end": 176.42
+        },
+        {
+          "word": " this",
+          "start": 176.42,
+          "end": 176.66
+        },
+        {
+          "word": " on",
+          "start": 176.66,
+          "end": 176.86
+        },
+        {
+          "word": " and",
+          "start": 176.86,
+          "end": 177.0
+        },
+        {
+          "word": " I'll",
+          "start": 177.0,
+          "end": 177.16
+        },
+        {
+          "word": " show",
+          "start": 177.16,
+          "end": 177.2
+        },
+        {
+          "word": " you",
+          "start": 177.2,
+          "end": 177.34
+        },
+        {
+          "word": " guys",
+          "start": 177.34,
+          "end": 177.42
+        },
+        {
+          "word": " what",
+          "start": 177.42,
+          "end": 177.54
+        },
+        {
+          "word": " it",
+          "start": 177.54,
+          "end": 177.62
+        },
+        {
+          "word": " looks",
+          "start": 177.62,
+          "end": 177.76
+        },
+        {
+          "word": " like",
+          "start": 177.76,
+          "end": 177.94
+        }
+      ]
+    },
+    {
+      "id": "seg-0038",
+      "order": 38,
+      "included": true,
+      "start": 177.94,
+      "end": 183.42,
+      "text": "I want to say thank you so much to Walmart for sponsoring this portion of the video and just look at how cute this",
+      "words": [
+        {
+          "word": " I",
+          "start": 177.94,
+          "end": 178.22
+        },
+        {
+          "word": " want",
+          "start": 178.22,
+          "end": 178.4
+        },
+        {
+          "word": " to",
+          "start": 178.4,
+          "end": 178.56
+        },
+        {
+          "word": " say",
+          "start": 178.56,
+          "end": 178.7
+        },
+        {
+          "word": " thank",
+          "start": 178.7,
+          "end": 178.96
+        },
+        {
+          "word": " you",
+          "start": 178.96,
+          "end": 179.12
+        },
+        {
+          "word": " so",
+          "start": 179.12,
+          "end": 179.3
+        },
+        {
+          "word": " much",
+          "start": 179.3,
+          "end": 179.46
+        },
+        {
+          "word": " to",
+          "start": 179.46,
+          "end": 179.66
+        },
+        {
+          "word": " Walmart",
+          "start": 179.66,
+          "end": 179.9
+        },
+        {
+          "word": " for",
+          "start": 179.9,
+          "end": 180.22
+        },
+        {
+          "word": " sponsoring",
+          "start": 180.22,
+          "end": 180.56
+        },
+        {
+          "word": " this",
+          "start": 180.56,
+          "end": 180.8
+        },
+        {
+          "word": " portion",
+          "start": 180.8,
+          "end": 181.08
+        },
+        {
+          "word": " of",
+          "start": 181.08,
+          "end": 181.22
+        },
+        {
+          "word": " the",
+          "start": 181.22,
+          "end": 181.36
+        },
+        {
+          "word": " video",
+          "start": 181.36,
+          "end": 181.84
+        },
+        {
+          "word": " and",
+          "start": 181.84,
+          "end": 182.34
+        },
+        {
+          "word": " just",
+          "start": 182.34,
+          "end": 182.5
+        },
+        {
+          "word": " look",
+          "start": 182.5,
+          "end": 182.72
+        },
+        {
+          "word": " at",
+          "start": 182.72,
+          "end": 182.8
+        },
+        {
+          "word": " how",
+          "start": 182.8,
+          "end": 182.98
+        },
+        {
+          "word": " cute",
+          "start": 182.98,
+          "end": 183.18
+        },
+        {
+          "word": " this",
+          "start": 183.18,
+          "end": 183.42
+        }
+      ]
+    },
+    {
+      "id": "seg-0039",
+      "order": 39,
+      "included": true,
+      "start": 183.42,
+      "end": 188.26,
+      "text": "Is like you're kidding. This is adorable. Also, I realize Bridgerton is already out",
+      "words": [
+        {
+          "word": " Is",
+          "start": 183.42,
+          "end": 183.92
+        },
+        {
+          "word": " like",
+          "start": 183.92,
+          "end": 184.46
+        },
+        {
+          "word": " you're",
+          "start": 184.46,
+          "end": 184.74
+        },
+        {
+          "word": " kidding.",
+          "start": 184.74,
+          "end": 184.96
+        },
+        {
+          "word": " This",
+          "start": 185.04,
+          "end": 185.44
+        },
+        {
+          "word": " is",
+          "start": 185.44,
+          "end": 185.64
+        },
+        {
+          "word": " adorable.",
+          "start": 185.64,
+          "end": 186.0
+        },
+        {
+          "word": " Also,",
+          "start": 186.18,
+          "end": 186.58
+        },
+        {
+          "word": " I",
+          "start": 186.58,
+          "end": 186.84
+        },
+        {
+          "word": " realize",
+          "start": 186.84,
+          "end": 187.08
+        },
+        {
+          "word": " Bridgerton",
+          "start": 187.08,
+          "end": 187.48
+        },
+        {
+          "word": " is",
+          "start": 187.48,
+          "end": 187.66
+        },
+        {
+          "word": " already",
+          "start": 187.66,
+          "end": 188.0
+        },
+        {
+          "word": " out",
+          "start": 188.0,
+          "end": 188.26
+        }
+      ]
+    },
+    {
+      "id": "seg-0040",
+      "order": 40,
+      "included": true,
+      "start": 188.26,
+      "end": 189.54,
+      "text": "It came out in February",
+      "words": [
+        {
+          "word": " It",
+          "start": 188.26,
+          "end": 188.5
+        },
+        {
+          "word": " came",
+          "start": 188.5,
+          "end": 188.62
+        },
+        {
+          "word": " out",
+          "start": 188.62,
+          "end": 188.82
+        },
+        {
+          "word": " in",
+          "start": 188.82,
+          "end": 188.94
+        },
+        {
+          "word": " February",
+          "start": 188.94,
+          "end": 189.54
+        }
+      ]
+    },
+    {
+      "id": "seg-0041",
+      "order": 41,
+      "included": true,
+      "start": 189.54,
+      "end": 192.28,
+      "text": "Well, like part one of the season and then part two",
+      "words": [
+        {
+          "word": " Well,",
+          "start": 189.54,
+          "end": 190.06
+        },
+        {
+          "word": " like",
+          "start": 190.1,
+          "end": 190.32
+        },
+        {
+          "word": " part",
+          "start": 190.32,
+          "end": 190.52
+        },
+        {
+          "word": " one",
+          "start": 190.52,
+          "end": 190.78
+        },
+        {
+          "word": " of",
+          "start": 190.78,
+          "end": 190.98
+        },
+        {
+          "word": " the",
+          "start": 190.98,
+          "end": 191.12
+        },
+        {
+          "word": " season",
+          "start": 191.12,
+          "end": 191.38
+        },
+        {
+          "word": " and",
+          "start": 191.38,
+          "end": 191.56
+        },
+        {
+          "word": " then",
+          "start": 191.56,
+          "end": 191.72
+        },
+        {
+          "word": " part",
+          "start": 191.72,
+          "end": 191.9
+        },
+        {
+          "word": " two",
+          "start": 191.9,
+          "end": 192.28
+        }
+      ]
+    },
+    {
+      "id": "seg-0042",
+      "order": 42,
+      "included": true,
+      "start": 192.28,
+      "end": 198.68,
+      "text": "But I need to like upgrade my subscription or even have a subscription to any streaming platform to watch it",
+      "words": [
+        {
+          "word": " But",
+          "start": 192.28,
+          "end": 192.98
+        },
+        {
+          "word": " I",
+          "start": 192.98,
+          "end": 193.38
+        },
+        {
+          "word": " need",
+          "start": 193.38,
+          "end": 193.56
+        },
+        {
+          "word": " to",
+          "start": 193.56,
+          "end": 193.88
+        },
+        {
+          "word": " like",
+          "start": 193.88,
+          "end": 194.12
+        },
+        {
+          "word": " upgrade",
+          "start": 194.12,
+          "end": 194.5
+        },
+        {
+          "word": " my",
+          "start": 194.5,
+          "end": 194.74
+        },
+        {
+          "word": " subscription",
+          "start": 194.74,
+          "end": 195.22
+        },
+        {
+          "word": " or",
+          "start": 195.22,
+          "end": 195.7
+        },
+        {
+          "word": " even",
+          "start": 195.7,
+          "end": 196.02
+        },
+        {
+          "word": " have",
+          "start": 196.02,
+          "end": 196.22
+        },
+        {
+          "word": " a",
+          "start": 196.22,
+          "end": 196.42
+        },
+        {
+          "word": " subscription",
+          "start": 196.42,
+          "end": 196.7
+        },
+        {
+          "word": " to",
+          "start": 196.7,
+          "end": 196.94
+        },
+        {
+          "word": " any",
+          "start": 196.94,
+          "end": 197.12
+        },
+        {
+          "word": " streaming",
+          "start": 197.12,
+          "end": 197.36
+        },
+        {
+          "word": " platform",
+          "start": 197.36,
+          "end": 197.72
+        },
+        {
+          "word": " to",
+          "start": 197.72,
+          "end": 197.94
+        },
+        {
+          "word": " watch",
+          "start": 197.94,
+          "end": 198.1
+        },
+        {
+          "word": " it",
+          "start": 198.1,
+          "end": 198.68
+        }
+      ]
+    },
+    {
+      "id": "seg-0043",
+      "order": 43,
+      "included": true,
+      "start": 198.68,
+      "end": 201.0,
+      "text": "So it isn't out to me yet, but I'm",
+      "words": [
+        {
+          "word": " So",
+          "start": 198.68,
+          "end": 199.04
+        },
+        {
+          "word": " it",
+          "start": 199.04,
+          "end": 199.26
+        },
+        {
+          "word": " isn't",
+          "start": 199.26,
+          "end": 199.56
+        },
+        {
+          "word": " out",
+          "start": 199.56,
+          "end": 199.76
+        },
+        {
+          "word": " to",
+          "start": 199.76,
+          "end": 200.0
+        },
+        {
+          "word": " me",
+          "start": 200.0,
+          "end": 200.2
+        },
+        {
+          "word": " yet,",
+          "start": 200.2,
+          "end": 200.46
+        },
+        {
+          "word": " but",
+          "start": 200.46,
+          "end": 200.8
+        },
+        {
+          "word": " I'm",
+          "start": 200.8,
+          "end": 201.0
         }
       ]
     }

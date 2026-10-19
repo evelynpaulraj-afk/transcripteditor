@@ -1,16 +1,25 @@
 import os
 import json
 import cv2
-import base64
 import time
 import sys
 from dotenv import load_dotenv
 from google import genai
+from google.genai import types
 
 
 # ============================================================
-# CONFIGURATION
+# DEVELOPMENT SETTINGS
 # ============================================================
+
+TEST_MODE = True        # False for the final experiment
+# ============================================================
+# CACHE SETTINGS
+# ============================================================
+
+USE_CACHED_VISUAL_CONTEXT = True
+
+MAX_TEST_SHOTS = 10
 
 load_dotenv()
 
@@ -24,22 +33,22 @@ if not API_KEY:
 client = genai.Client(api_key=API_KEY)
 
 # Current Gemini model
-MODEL_NAME = "gemini-3.6-flash"
+MODEL_NAME = "gemini-3.5-flash-lite"
 
 # Temporary directory for extracted frames
 FRAME_DIR = "frames"
 
 # Create a visual analysis request for every N seconds
-SHOT_DURATION = 5.0
+SHOT_DURATION = 20.0
 
 # Number of representative frames sent to Gemini for each shot
-FRAMES_PER_SHOT = 3
+FRAMES_PER_SHOT = 1 if TEST_MODE else 3
 
 # Small delay between API requests
-API_DELAY = 0.5
+API_DELAY = 1
 
 # Number of retries for a failed Gemini request
-MAX_RETRIES = 3
+MAX_RETRIES = 5
 
 
 # ============================================================
@@ -48,7 +57,7 @@ MAX_RETRIES = 3
 
 def detect_shots(video_path):
     """
-    Divide the video into fixed 5-second windows.
+    Divide the video into fixed-duration windows.
 
     Returns:
         [
@@ -133,7 +142,10 @@ def extract_frames(video_path, shots):
         duration = end - start
 
         # Representative points inside the shot
-        percentages = [0.20, 0.50, 0.80]
+        if TEST_MODE:
+            percentages = [0.50]          # middle frame only
+        else:
+            percentages = [0.20, 0.50, 0.80]
 
         frame_paths = []
 
@@ -160,7 +172,7 @@ def extract_frames(video_path, shots):
             cv2.imwrite(
                 path,
                 frame,
-                [cv2.IMWRITE_JPEG_QUALITY, 85]
+                [cv2.IMWRITE_JPEG_QUALITY, 65]
             )
 
             frame_paths.append(path)
@@ -177,6 +189,7 @@ def extract_frames(video_path, shots):
 # ============================================================
 
 def analyze_shot(shot):
+    gemini_start = time.time()
     """
     Send the representative frames of one shot to Gemini.
 
@@ -189,69 +202,69 @@ def analyze_shot(shot):
     """
 
     prompt = f"""
-You are performing visual analysis for an AI video editor.
+    You are performing visual analysis for an AI video editor.
 
-Analyze the following video shot using the provided representative
-frames.
+    Analyze the following video shot using the provided representative
+    frames.
 
-Shot information:
-- Shot ID: {shot["shot_id"]}
-- Start time: {shot["start"]} seconds
-- End time: {shot["end"]} seconds
+    Shot information:
+    - Shot ID: {shot["shot_id"]}
+    - Start time: {shot["start"]} seconds
+    - End time: {shot["end"]} seconds
 
-Return ONLY valid JSON.
-Do not include markdown.
-Do not include explanations outside the JSON.
+    Return ONLY valid JSON.
+    Do not include markdown.
+    Do not include explanations outside the JSON.
 
-Use exactly this schema:
+    Use exactly this schema:
 
-{{
-  "people": [],
-  "actions": [],
-  "objects": [],
-  "visual_content": [],
-  "screen_or_slide_content": [],
-  "camera_framing": "",
-  "editing_relevance": ""
-}}
+    {{
+    "people": [],
+    "actions": [],
+    "objects": [],
+    "visual_content": [],
+    "screen_or_slide_content": [],
+    "camera_framing": "",
+    "editing_relevance": ""
+    }}
 
-Instructions:
+    Instructions:
 
-1. people
-   - List visible people or relevant characteristics.
-   - Example: ["one person", "man", "woman", "speaker"]
+    1. people
+    - List visible people or relevant characteristics.
+    - Example: ["one person", "man", "woman", "speaker"]
 
-2. actions
-   - Describe visible actions.
-   - Example: ["speaking", "walking", "typing"]
+    2. actions
+    - Describe visible actions.
+    - Example: ["speaking", "walking", "typing"]
 
-3. objects
-   - List important visible objects.
-   - Example: ["laptop", "microphone", "phone"]
+    3. objects
+    - List important visible objects.
+    - Example: ["laptop", "microphone", "phone"]
 
-4. visual_content
-   - Describe important visual information in the scene.
-   - Include meaningful environmental or visual details.
+    4. visual_content
+    - Describe important visual information in the scene.
+    - Include meaningful environmental or visual details.
 
-5. screen_or_slide_content
-   - If a screen, presentation, chart, webpage, document, or slide
-     is visible, describe its important content.
-   - If none is visible, return [].
+    5. screen_or_slide_content
+    - If a screen, presentation, chart, webpage, document, or slide
+        is visible, describe its important content.
+    - If none is visible, return [].
 
-6. camera_framing
-   - Describe the framing.
-   - Example: "medium shot", "close-up", "wide shot",
-     "screen recording", "two-person shot"
+    6. camera_framing
+    - Describe the framing.
+    - Example: "medium shot", "close-up", "wide shot",
+        "screen recording", "two-person shot"
 
-7. editing_relevance
-   - Explain briefly what makes this shot relevant for video editing.
-   - Focus on things such as speech context, visual changes,
-     demonstrations, slides, screen content, actions, or scene changes.
+    7. editing_relevance
+    - Explain briefly what makes this shot relevant for video editing.
+    - Focus on things such as speech context, visual changes,
+        demonstrations, slides, screen content, actions, or scene changes.
 
-Be factual.
-Do not invent information that is not visible.
-Keep each field concise.
-"""
+    Be factual.
+    Do not invent information that is not visible.
+    Keep each field concise.
+    """
 
     # Build multimodal Interactions API input
     inputs = []
@@ -261,18 +274,14 @@ Keep each field concise.
         with open(frame_path, "rb") as f:
             image_bytes = f.read()
 
-        image_b64 = base64.b64encode(image_bytes).decode("utf-8")
+        inputs.append(
+            types.Part.from_bytes(
+                data=image_bytes,
+                mime_type="image/jpeg"
+            )
+        )
 
-        inputs.append({
-            "type": "image",
-            "mime_type": "image/jpeg",
-            "data": image_b64
-        })
-
-    inputs.append({
-        "type": "text",
-        "text": prompt
-    })
+    inputs.append(prompt)
 
     last_error = None
 
@@ -285,12 +294,12 @@ Keep each field concise.
                 f"{attempt}/{MAX_RETRIES}..."
             )
 
-            interaction = client.interactions.create(
+            response = client.models.generate_content(
                 model=MODEL_NAME,
-                input=inputs
+                contents=inputs
             )
 
-            response_text = interaction.output_text.strip()
+            response_text = response.text
 
             # Remove accidental markdown fences if Gemini adds them
             if response_text.startswith("```"):
@@ -318,7 +327,7 @@ Keep each field concise.
                     "editing_relevance", ""
                 )
             }
-
+            print(f"Gemini took {time.time()-gemini_start:.2f} seconds")
             return result
 
         except Exception as e:
@@ -330,7 +339,10 @@ Keep each field concise.
             )
 
             if attempt < MAX_RETRIES:
-                wait_time = attempt * 2
+                if "429" in str(e):
+                    wait_time = 15
+                else:
+                    wait_time = attempt * 5
 
                 print(
                     f"  Retrying in {wait_time} seconds..."
@@ -342,7 +354,7 @@ Keep each field concise.
         f"  WARNING: visual analysis failed for "
         f"shot {shot['shot_id']}"
     )
-
+    
     return {
         "people": [],
         "actions": [],
@@ -357,7 +369,6 @@ Keep each field concise.
 # ============================================================
 # MAIN
 # ============================================================
-
 def main():
 
     if len(sys.argv) < 3:
@@ -392,7 +403,11 @@ def main():
 
     print("Detecting shots...")
 
+    t = time.time()
     shots = detect_shots(video_path)
+    if TEST_MODE:
+        shots = shots[:MAX_TEST_SHOTS]
+    print(f"Shot detection took {time.time()-t:.2f} seconds")
 
     print(f"Detected {len(shots)} shots.")
     print()
@@ -403,10 +418,9 @@ def main():
 
     print("Extracting representative frames...")
 
-    shots = extract_frames(
-        video_path,
-        shots
-    )
+    t = time.time()
+    shots = extract_frames(video_path, shots)
+    print(f"Frame extraction took {time.time()-t:.2f} seconds")
 
     total_frames = sum(
         len(shot.get("frames", []))
@@ -419,21 +433,85 @@ def main():
     print()
 
     # --------------------------------------------------------
-    # 3. Analyze each shot with Gemini
+    # 3. Cache / Resume Support
     # --------------------------------------------------------
 
+    if USE_CACHED_VISUAL_CONTEXT and os.path.exists(output_path):
+
+        print("=" * 60)
+        print("Using cached visual context")
+        print("=" * 60)
+        print(f"Loaded: {output_path}")
+        print()
+
+        with open(output_path, "r", encoding="utf-8") as f:
+            visual_context = json.load(f)
+
+        print(f"Loaded {len(visual_context)} analyzed shots.")
+
+        print("Skipping Gemini visual analysis.")
+        print()
+
+        return
+
+    visual_context = []
+    completed_shots = set()
+
+    if os.path.exists(output_path):
+
+        try:
+
+            with open(output_path, "r", encoding="utf-8") as f:
+                visual_context = json.load(f)
+
+            completed_shots = {
+                shot["shot_id"]
+                for shot in visual_context
+            }
+
+            print(
+                f"Resuming from {len(completed_shots)} completed shots."
+            )
+
+        except Exception:
+
+            print("Existing JSON could not be read.")
+
+            visual_context = []
+            completed_shots = set()
+
+    # --------------------------------------------------------
+    # 4. Decide what to process
+    # --------------------------------------------------------
+
+    shots_to_process = (
+        shots[:MAX_TEST_SHOTS]
+        if TEST_MODE
+        else shots
+    )
+
     print(
-        f"Analyzing shots with Gemini API "
-        f"using {MODEL_NAME}..."
+        f"Processing {len(shots_to_process)} shots..."
     )
     print()
 
-    visual_context = []
+    start_time = time.time()
 
-    for index, shot in enumerate(shots):
+    # --------------------------------------------------------
+    # 5. Analyze shots
+    # --------------------------------------------------------
+    processed_count = len(completed_shots)
+
+    for index, shot in enumerate(shots_to_process):
+
+        if shot["shot_id"] in completed_shots:
+            print(
+                f"Skipping Shot {shot['shot_id']} (already completed)"
+            )
+            continue
 
         print(
-            f"[{index + 1}/{len(shots)}] "
+            f"[{index + 1}/{len(shots_to_process)}] "
             f"Shot {shot['shot_id']} "
             f"({shot['start']}s - {shot['end']}s)"
         )
@@ -447,26 +525,40 @@ def main():
             "analysis": analysis
         })
 
-        print(
-            f"  People: {analysis['people']}"
-        )
+        # Save after every successful shot
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(
+                visual_context,
+                f,
+                indent=2,
+                ensure_ascii=False
+            )
 
-        print(
-            f"  Actions: {analysis['actions']}"
-        )
-
-        print(
-            f"  Framing: {analysis['camera_framing']}"
-        )
-
+        print(f"  People: {analysis['people']}")
+        print(f"  Actions: {analysis['actions']}")
+        print(f"  Framing: {analysis['camera_framing']}")
         print()
 
-        # Avoid sending requests too rapidly
-        if index < len(shots) - 1:
+        # ETA
+        # Update processed count
+        processed_count += 1
+
+        # ETA
+        elapsed = time.time() - start_time
+        avg = elapsed / max(processed_count - len(completed_shots), 1)
+        remaining = len(shots_to_process) - processed_count
+        eta = remaining * avg
+
+        print(
+            f"Completed: {processed_count}/{len(shots_to_process)} | "
+            f"ETA: {eta/60:.1f} minutes"
+        )
+
+        if index < len(shots_to_process) - 1:
             time.sleep(API_DELAY)
 
     # --------------------------------------------------------
-    # 4. Save JSON
+    # 6. Final save
     # --------------------------------------------------------
 
     with open(

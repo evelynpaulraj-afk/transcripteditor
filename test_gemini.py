@@ -1,19 +1,18 @@
-import os
-from dotenv import load_dotenv
 from google import genai
+from dotenv import load_dotenv
+import os
+import time
 
 load_dotenv()
 
-api_key = os.getenv("GEMINI_API_KEY")
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-if not api_key:
-    raise RuntimeError("GEMINI_API_KEY not found in .env")
-
-client = genai.Client(api_key=api_key)
+start = time.time()
 
 response = client.models.generate_content(
     model="gemini-3.8-flash",
-    contents="Describe what an AI video editor does in one sentence."
+    contents="Say hello."
 )
 
 print(response.text)
+print(f"Took {time.time()-start:.2f} seconds")

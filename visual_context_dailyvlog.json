@@ -1,0 +1,288 @@
+[
+  {
+    "shot_id": 0,
+    "start": 0.0,
+    "end": 20.0,
+    "analysis": {
+      "people": [
+        "one person",
+        "woman",
+        "speaker"
+      ],
+      "actions": [
+        "speaking",
+        "gesturing"
+      ],
+      "objects": [
+        "headband",
+        "sweatshirt",
+        "jewelry",
+        "bed"
+      ],
+      "visual_content": [
+        "a young woman sitting in a bedroom speaking to the camera",
+        "pink and white themed bedroom decor",
+        "a TikTok watermark on screen"
+      ],
+      "screen_or_slide_content": [],
+      "camera_framing": "medium shot",
+      "editing_relevance": "Features a speaker talking directly to the camera, suitable for lifestyle vlogs or talking-head video segments."
+    }
+  },
+  {
+    "shot_id": 1,
+    "start": 20.0,
+    "end": 40.0,
+    "analysis": {
+      "people": [
+        "one woman",
+        "speaker"
+      ],
+      "actions": [
+        "speaking",
+        "gesturing with hands"
+      ],
+      "objects": [
+        "headband",
+        "sweater",
+        "artwork",
+        "bed",
+        "shelf"
+      ],
+      "visual_content": [
+        "a woman with long brown hair and a yellow headband wearing a pink sweater, standing in a brightly lit room with pink decor and white walls"
+      ],
+      "screen_or_slide_content": [],
+      "camera_framing": "medium shot",
+      "editing_relevance": "the speaker is talking to the camera, making it suitable for a direct-address or vlog segment"
+    }
+  },
+  {
+    "shot_id": 2,
+    "start": 40.0,
+    "end": 60.0,
+    "analysis": {
+      "people": [
+        "one person",
+        "young woman",
+        "speaker"
+      ],
+      "actions": [
+        "speaking",
+        "gesturing with hands"
+      ],
+      "objects": [
+        "headband",
+        "sweater",
+        "wall decorations",
+        "pin board"
+      ],
+      "visual_content": [
+        "a young woman with long curly brown hair and a yellow headband wearing a pink sweater, speaking in a room with white walls, a window with light coming through on the left, and decorative items in the background"
+      ],
+      "screen_or_slide_content": [],
+      "camera_framing": "medium shot",
+      "editing_relevance": "Captures the speaker delivering content directly to the camera with hand gestures, making it suitable for video segments involving personal commentary or vlogs."
+    }
+  },
+  {
+    "shot_id": 3,
+    "start": 60.0,
+    "end": 80.0,
+    "analysis": {
+      "people": [
+        "one person",
+        "woman",
+        "speaker"
+      ],
+      "actions": [
+        "speaking",
+        "talking to the camera"
+      ],
+      "objects": [
+        "headband",
+        "sweater",
+        "shelf",
+        "bed"
+      ],
+      "visual_content": [
+        "a woman with long curly hair wearing a pale yellow headband and pink sweater in a brightly lit room with pink and white decor"
+      ],
+      "screen_or_slide_content": [],
+      "camera_framing": "medium shot",
+      "editing_relevance": "Contains a woman speaking to the camera in a decorated room, suitable for vlogs, commentary, or lifestyle content."
+    }
+  },
+  {
+    "shot_id": 4,
+    "start": 80.0,
+    "end": 100.0,
+    "analysis": {
+      "people": [
+        "one person",
+        "woman",
+        "speaker"
+      ],
+      "actions": [
+        "speaking"
+      ],
+      "objects": [
+        "headband",
+        "pink sweater",
+        "bed"
+      ],
+      "visual_content": [
+        "woman wearing a yellow headband and pink sweater in a bedroom"
+      ],
+      "screen_or_slide_content": [],
+      "camera_framing": "medium shot",
+      "editing_relevance": "Shows the speaker talking directly to the camera in a bedroom setting."
+    }
+  },
+  {
+    "shot_id": 5,
+    "start": 100.0,
+    "end": 120.0,
+    "analysis": {
+      "people": [
+        "one person"
+      ],
+      "actions": [
+        "moving in the foreground"
+      ],
+      "objects": [
+        "clothes rack",
+        "door",
+        "bags",
+        "clothing"
+      ],
+      "visual_content": [
+        "a bedroom with a clothes rack holding various colorful hoodies and sweaters",
+        "a white door with hanging bags",
+        "a pink flower wall decoration"
+      ],
+      "screen_or_slide_content": [],
+      "camera_framing": "medium shot",
+      "editing_relevance": "Shows a person organizing or moving near a clothing rack, indicating lifestyle or fashion content."
+    }
+  },
+  {
+    "shot_id": 6,
+    "start": 120.0,
+    "end": 140.0,
+    "analysis": {
+      "people": [
+        "woman"
+      ],
+      "actions": [
+        "speaking",
+        "holding an item"
+      ],
+      "objects": [
+        "clothing rack",
+        "mirror",
+        "headband",
+        "sweatshirt"
+      ],
+      "visual_content": [
+        "a woman with long curly brown hair wearing a pink sweatshirt and a green headband",
+        "a clothing rack with various colorful clothes in the background",
+        "a vanity mirror to the right"
+      ],
+      "screen_or_slide_content": [],
+      "camera_framing": "medium shot",
+      "editing_relevance": "Shows the creator speaking to the audience and presenting items in a bedroom/closet setting."
+    }
+  },
+  {
+    "shot_id": 7,
+    "start": 140.0,
+    "end": 160.0,
+    "analysis": {
+      "people": [
+        "one person",
+        "young woman",
+        "speaker"
+      ],
+      "actions": [
+        "speaking",
+        "holding an item",
+        "sorting clothes"
+      ],
+      "objects": [
+        "clothes rack",
+        "sweatshirts",
+        "mirror",
+        "framed artwork",
+        "storage bins",
+        "headband"
+      ],
+      "visual_content": [
+        "A young woman with long curly brown hair and a headband is standing in a brightly lit bedroom or closet area next to a clothing rack filled with colorful sweatshirts. A large ornate mirror and framed wall art are visible in the background."
+      ],
+      "screen_or_slide_content": [],
+      "camera_framing": "medium shot",
+      "editing_relevance": "Relevant as a transition or continuity shot in a fashion, lifestyle, or haul video showing clothing organization and outfit selection."
+    }
+  },
+  {
+    "shot_id": 8,
+    "start": 160.0,
+    "end": 180.0,
+    "analysis": {
+      "people": [
+        "one person",
+        "woman",
+        "speaker"
+      ],
+      "actions": [
+        "speaking",
+        "holding up an item"
+      ],
+      "objects": [
+        "headband",
+        "clothing",
+        "clothing rack",
+        "mirror",
+        "picture frame",
+        "flower decoration"
+      ],
+      "visual_content": [
+        "The speaker is holding up a lace garment in a well-lit room with clothing racks and a decorative mirror in the background."
+      ],
+      "screen_or_slide_content": [],
+      "camera_framing": "medium shot",
+      "editing_relevance": "Captures the speaker presenting clothing items, useful for product showcase or haul segments."
+    }
+  },
+  {
+    "shot_id": 9,
+    "start": 180.0,
+    "end": 200.0,
+    "analysis": {
+      "people": [
+        "one person",
+        "young woman",
+        "speaker"
+      ],
+      "actions": [
+        "speaking",
+        "gesturing with hands"
+      ],
+      "objects": [
+        "clothing rack",
+        "mirror",
+        "necklaces",
+        "bracelets"
+      ],
+      "visual_content": [
+        "woman with long brown curly hair speaking to the camera",
+        "bright indoor bedroom setting with a clothing rack and mirror in the background",
+        "text overlays indicating partnership"
+      ],
+      "screen_or_slide_content": [],
+      "camera_framing": "medium shot",
+      "editing_relevance": "Contains a speaker talking directly to the camera, useful for vlogs, lifestyle content, or interview-style segments."
+    }
+  }
+]
